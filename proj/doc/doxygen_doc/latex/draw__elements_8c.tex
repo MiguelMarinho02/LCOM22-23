@@ -1,0 +1,448 @@
+\doxysection{src/lib/draw\+\_\+elements.c File Reference}
+\hypertarget{draw__elements_8c}{}\label{draw__elements_8c}\index{src/lib/draw\_elements.c@{src/lib/draw\_elements.c}}
+{\ttfamily \#include \"{}draw\+\_\+elements.\+h\"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Include dependency graph for draw\+\_\+elements.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw__elements_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{draw__elements_8c_ad3691991b3af52e1fbf2b67ed919e920}{draw\+\_\+player}} ()
+\begin{DoxyCompactList}\small\item\em Draws player in current position. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{draw__elements_8c_a6b9a9c8520d4da6e26d9846eecc4f1d0}{clear\+\_\+player}} ()
+\begin{DoxyCompactList}\small\item\em Clears player sprite in current position. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{draw__elements_8c_a46d4d80733936df5b4691bead8b72187}{draw\+\_\+aliens}} (int sprite\+Num)
+\begin{DoxyCompactList}\small\item\em Displays enemy of the correct sprite num. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{draw__elements_8c_a5b17322d335293731fc0014d18093f2e}{clear\+\_\+aliens}} ()
+\begin{DoxyCompactList}\small\item\em Enemy clear function. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{draw__elements_8c_ac5279c7b71c8b9f1b5c69316b3996715}{draw\+\_\+cursor}} ()
+\begin{DoxyCompactList}\small\item\em Displays cursor in its current position. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{draw__elements_8c_a37b5d7c1c38c4fa2486c44a1398c29d4}{clear\+\_\+cursor}} ()
+\begin{DoxyCompactList}\small\item\em Clears cursor and resets old offset. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{draw__elements_8c_ac17b93ffa643351b1072d0238fae4c8c}{draw\+\_\+arena}} (int score, int timer, int hp)
+\item 
+void \mbox{\hyperlink{draw__elements_8c_a3ccbe532152ba0d5d45ab79cf9e6aad0}{update\+Bullets}} ()
+\begin{DoxyCompactList}\small\item\em updates the bullet movement \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{draw__elements_8c_acba7cd85cc793f29ccd4ccdfb34a8aa8}{clear\+\_\+bullets}} ()
+\begin{DoxyCompactList}\small\item\em Clears every singe bullet in its own position. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{draw__elements_8c_a29168c20bf1b406ea45ffba62f01b6bd}{draw\+\_\+letter}} (char letter, int x, int y)
+\begin{DoxyCompactList}\small\item\em Draws letter from the font\textquotesingle{}s xpm. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{draw__elements_8c_a762343144f93321e0434a89bf459ece1}{draw\+\_\+string}} (char \texorpdfstring{$\ast$}{*}string, int x, int y)
+\begin{DoxyCompactList}\small\item\em Draws a string of letters calling \doxylink{draw__elements_8c_a29168c20bf1b406ea45ffba62f01b6bd}{draw\+\_\+letter()} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{draw__elements_8c_a6f952ec5dffb57c1018d4e1ba0565efb}{draw\+\_\+elements}} (int sprite\+Num, int score, int timer, int hp)
+\begin{DoxyCompactList}\small\item\em Draws all the elements of the game by calling the respective functions. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{draw__elements_8c_a9ea6d831e691382ae3872139b0e140e0}{clear\+\_\+elements}} ()
+\begin{DoxyCompactList}\small\item\em Clears all elements on the screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{draw__elements_8c_a7d771989b41395d6d703f523c6fc22eb}{draw\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em Draws the menu of the game. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{draw__elements_8c_a5f5131a2e10a6b3d67b5077ac966ebf9}{clear\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em Clears the menu of the game. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{draw__elements_8c_a8dc791fd2f31c50dcccf756f6ddea66f}{clear\+\_\+leaderboard}} ()
+\begin{DoxyCompactList}\small\item\em Clear the leaderboard off screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{draw__elements_8c_a9427751110965a8dc8560d650b94ec71}{create\+Bullet}} (int x\+\_\+dest, int y\+\_\+dest)
+\begin{DoxyCompactList}\small\item\em Creates a new \doxylink{struct_bullet}{Bullet} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{draw__elements_8c_a19ae330d4e3aeab1df508a45f590a1f9}{create\+Bullet\+Enemy}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Create a \doxylink{struct_bullet}{Bullet} Enemy object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{draw__elements_8c_a7182ce8f8b63f687878679ba2d582699}{reset\+Bullets}} ()
+\begin{DoxyCompactList}\small\item\em Reset the bullet\textquotesingle{}s state to inactive. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{draw__elements_8c_a0e8a5a333560c7fed74c58558a866bc9}{tostring}} (char str\mbox{[}$\,$\mbox{]}, int num)
+\begin{DoxyCompactList}\small\item\em Converts an integer to a string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{draw__elements_8c_a64a2325b5505e8bad50f421b0f208251}{update\+Leaderboard}} (int new\+Score)
+\begin{DoxyCompactList}\small\item\em Updates the leaderboard with the new score. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{draw__elements_8c_a587d9c8785cb31e3cdecceee901525e2}{display\+Leaderboard}} ()
+\begin{DoxyCompactList}\small\item\em Displays the leaderboard. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{draw__elements_8c_aff3334e480b5dbfadec71ec071555aaa}{clean\+Leaderboard}} ()
+\begin{DoxyCompactList}\small\item\em Clears the leaderboard. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_bullet}{Bullet}} \mbox{\hyperlink{draw__elements_8c_ad6e19525761212e53586bbb10c460ede}{bullets}} \mbox{[}\mbox{\hyperlink{draw__elements_8h_a4331843c2698da5ccb18562eb1485681}{MAX\+\_\+\+BULLETS}}\mbox{]}
+\item 
+int \mbox{\hyperlink{draw__elements_8c_a44c3e2243e8fc75056710ef4e93010c1}{num\+Bullets}} = 0
+\item 
+struct \mbox{\hyperlink{struct_bullet}{Bullet}} \mbox{\hyperlink{draw__elements_8c_a5b22206462b1452e142df7feba6bb576}{enemy\+Bullets}} \mbox{[}2 \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{draw__elements_8h_a4331843c2698da5ccb18562eb1485681}{MAX\+\_\+\+BULLETS}}\mbox{]}
+\item 
+int \mbox{\hyperlink{draw__elements_8c_a9fa608ad90128997fdbb7cc64c108594}{num\+Enemy\+Bullets}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{draw__elements_8c_aff3334e480b5dbfadec71ec071555aaa}\label{draw__elements_8c_aff3334e480b5dbfadec71ec071555aaa} 
+\index{draw\_elements.c@{draw\_elements.c}!cleanLeaderboard@{cleanLeaderboard}}
+\index{cleanLeaderboard@{cleanLeaderboard}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{cleanLeaderboard()}{cleanLeaderboard()}}
+{\footnotesize\ttfamily void clean\+Leaderboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears the leaderboard. 
+
+\Hypertarget{draw__elements_8c_a5b17322d335293731fc0014d18093f2e}\label{draw__elements_8c_a5b17322d335293731fc0014d18093f2e} 
+\index{draw\_elements.c@{draw\_elements.c}!clear\_aliens@{clear\_aliens}}
+\index{clear\_aliens@{clear\_aliens}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{clear\_aliens()}{clear\_aliens()}}
+{\footnotesize\ttfamily int clear\+\_\+aliens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enemy clear function. 
+
+\begin{DoxyReturn}{Returns}
+int 0 
+\end{DoxyReturn}
+\Hypertarget{draw__elements_8c_acba7cd85cc793f29ccd4ccdfb34a8aa8}\label{draw__elements_8c_acba7cd85cc793f29ccd4ccdfb34a8aa8} 
+\index{draw\_elements.c@{draw\_elements.c}!clear\_bullets@{clear\_bullets}}
+\index{clear\_bullets@{clear\_bullets}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{clear\_bullets()}{clear\_bullets()}}
+{\footnotesize\ttfamily void clear\+\_\+bullets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears every singe bullet in its own position. 
+
+\Hypertarget{draw__elements_8c_a37b5d7c1c38c4fa2486c44a1398c29d4}\label{draw__elements_8c_a37b5d7c1c38c4fa2486c44a1398c29d4} 
+\index{draw\_elements.c@{draw\_elements.c}!clear\_cursor@{clear\_cursor}}
+\index{clear\_cursor@{clear\_cursor}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{clear\_cursor()}{clear\_cursor()}}
+{\footnotesize\ttfamily int clear\+\_\+cursor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears cursor and resets old offset. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{draw__elements_8c_a9ea6d831e691382ae3872139b0e140e0}\label{draw__elements_8c_a9ea6d831e691382ae3872139b0e140e0} 
+\index{draw\_elements.c@{draw\_elements.c}!clear\_elements@{clear\_elements}}
+\index{clear\_elements@{clear\_elements}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{clear\_elements()}{clear\_elements()}}
+{\footnotesize\ttfamily int clear\+\_\+elements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears all elements on the screen. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{draw__elements_8c_a8dc791fd2f31c50dcccf756f6ddea66f}\label{draw__elements_8c_a8dc791fd2f31c50dcccf756f6ddea66f} 
+\index{draw\_elements.c@{draw\_elements.c}!clear\_leaderboard@{clear\_leaderboard}}
+\index{clear\_leaderboard@{clear\_leaderboard}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{clear\_leaderboard()}{clear\_leaderboard()}}
+{\footnotesize\ttfamily int clear\+\_\+leaderboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clear the leaderboard off screen. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{draw__elements_8c_a5f5131a2e10a6b3d67b5077ac966ebf9}\label{draw__elements_8c_a5f5131a2e10a6b3d67b5077ac966ebf9} 
+\index{draw\_elements.c@{draw\_elements.c}!clear\_menu@{clear\_menu}}
+\index{clear\_menu@{clear\_menu}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{clear\_menu()}{clear\_menu()}}
+{\footnotesize\ttfamily int clear\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears the menu of the game. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{draw__elements_8c_a6b9a9c8520d4da6e26d9846eecc4f1d0}\label{draw__elements_8c_a6b9a9c8520d4da6e26d9846eecc4f1d0} 
+\index{draw\_elements.c@{draw\_elements.c}!clear\_player@{clear\_player}}
+\index{clear\_player@{clear\_player}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{clear\_player()}{clear\_player()}}
+{\footnotesize\ttfamily int clear\+\_\+player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears player sprite in current position. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{draw__elements_8c_a9427751110965a8dc8560d650b94ec71}\label{draw__elements_8c_a9427751110965a8dc8560d650b94ec71} 
+\index{draw\_elements.c@{draw\_elements.c}!createBullet@{createBullet}}
+\index{createBullet@{createBullet}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{createBullet()}{createBullet()}}
+{\footnotesize\ttfamily void create\+Bullet (\begin{DoxyParamCaption}\item[{int}]{x\+\_\+dest,  }\item[{int}]{y\+\_\+dest }\end{DoxyParamCaption})}
+
+
+
+Creates a new \doxylink{struct_bullet}{Bullet} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+dest} & \\
+\hline
+{\em y\+\_\+dest} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{draw__elements_8c_a19ae330d4e3aeab1df508a45f590a1f9}\label{draw__elements_8c_a19ae330d4e3aeab1df508a45f590a1f9} 
+\index{draw\_elements.c@{draw\_elements.c}!createBulletEnemy@{createBulletEnemy}}
+\index{createBulletEnemy@{createBulletEnemy}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{createBulletEnemy()}{createBulletEnemy()}}
+{\footnotesize\ttfamily void create\+Bullet\+Enemy (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Create a \doxylink{struct_bullet}{Bullet} Enemy object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x position of enemy ship \\
+\hline
+{\em y} & y position of enemy ship \\
+\hline
+\end{DoxyParams}
+\Hypertarget{draw__elements_8c_a587d9c8785cb31e3cdecceee901525e2}\label{draw__elements_8c_a587d9c8785cb31e3cdecceee901525e2} 
+\index{draw\_elements.c@{draw\_elements.c}!displayLeaderboard@{displayLeaderboard}}
+\index{displayLeaderboard@{displayLeaderboard}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{displayLeaderboard()}{displayLeaderboard()}}
+{\footnotesize\ttfamily int display\+Leaderboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displays the leaderboard. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{draw__elements_8c_a46d4d80733936df5b4691bead8b72187}\label{draw__elements_8c_a46d4d80733936df5b4691bead8b72187} 
+\index{draw\_elements.c@{draw\_elements.c}!draw\_aliens@{draw\_aliens}}
+\index{draw\_aliens@{draw\_aliens}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{draw\_aliens()}{draw\_aliens()}}
+{\footnotesize\ttfamily int draw\+\_\+aliens (\begin{DoxyParamCaption}\item[{int}]{sprite\+Num }\end{DoxyParamCaption})}
+
+
+
+Displays enemy of the correct sprite num. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\+Num} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{draw__elements_8c_ac17b93ffa643351b1072d0238fae4c8c}\label{draw__elements_8c_ac17b93ffa643351b1072d0238fae4c8c} 
+\index{draw\_elements.c@{draw\_elements.c}!draw\_arena@{draw\_arena}}
+\index{draw\_arena@{draw\_arena}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{draw\_arena()}{draw\_arena()}}
+{\footnotesize\ttfamily int draw\+\_\+arena (\begin{DoxyParamCaption}\item[{int}]{score,  }\item[{int}]{timer,  }\item[{int}]{hp }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em score} & \\
+\hline
+{\em timer} & \\
+\hline
+{\em hp} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{draw__elements_8c_ac5279c7b71c8b9f1b5c69316b3996715}\label{draw__elements_8c_ac5279c7b71c8b9f1b5c69316b3996715} 
+\index{draw\_elements.c@{draw\_elements.c}!draw\_cursor@{draw\_cursor}}
+\index{draw\_cursor@{draw\_cursor}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{draw\_cursor()}{draw\_cursor()}}
+{\footnotesize\ttfamily int draw\+\_\+cursor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displays cursor in its current position. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{draw__elements_8c_a6f952ec5dffb57c1018d4e1ba0565efb}\label{draw__elements_8c_a6f952ec5dffb57c1018d4e1ba0565efb} 
+\index{draw\_elements.c@{draw\_elements.c}!draw\_elements@{draw\_elements}}
+\index{draw\_elements@{draw\_elements}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{draw\_elements()}{draw\_elements()}}
+{\footnotesize\ttfamily int draw\+\_\+elements (\begin{DoxyParamCaption}\item[{int}]{sprite\+Num,  }\item[{int}]{score,  }\item[{int}]{timer,  }\item[{int}]{hp }\end{DoxyParamCaption})}
+
+
+
+Draws all the elements of the game by calling the respective functions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\+Num} & \\
+\hline
+{\em score} & \\
+\hline
+{\em timer} & \\
+\hline
+{\em hp} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{draw__elements_8c_a6f952ec5dffb57c1018d4e1ba0565efb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw__elements_8c_a6f952ec5dffb57c1018d4e1ba0565efb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{draw__elements_8c_a29168c20bf1b406ea45ffba62f01b6bd}\label{draw__elements_8c_a29168c20bf1b406ea45ffba62f01b6bd} 
+\index{draw\_elements.c@{draw\_elements.c}!draw\_letter@{draw\_letter}}
+\index{draw\_letter@{draw\_letter}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{draw\_letter()}{draw\_letter()}}
+{\footnotesize\ttfamily int draw\+\_\+letter (\begin{DoxyParamCaption}\item[{char}]{letter,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Draws letter from the font\textquotesingle{}s xpm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em letter} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{draw__elements_8c_a7d771989b41395d6d703f523c6fc22eb}\label{draw__elements_8c_a7d771989b41395d6d703f523c6fc22eb} 
+\index{draw\_elements.c@{draw\_elements.c}!draw\_menu@{draw\_menu}}
+\index{draw\_menu@{draw\_menu}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{draw\_menu()}{draw\_menu()}}
+{\footnotesize\ttfamily int draw\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the menu of the game. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{draw__elements_8c_ad3691991b3af52e1fbf2b67ed919e920}\label{draw__elements_8c_ad3691991b3af52e1fbf2b67ed919e920} 
+\index{draw\_elements.c@{draw\_elements.c}!draw\_player@{draw\_player}}
+\index{draw\_player@{draw\_player}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{draw\_player()}{draw\_player()}}
+{\footnotesize\ttfamily int draw\+\_\+player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws player in current position. 
+
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}
+\Hypertarget{draw__elements_8c_a762343144f93321e0434a89bf459ece1}\label{draw__elements_8c_a762343144f93321e0434a89bf459ece1} 
+\index{draw\_elements.c@{draw\_elements.c}!draw\_string@{draw\_string}}
+\index{draw\_string@{draw\_string}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{draw\_string()}{draw\_string()}}
+{\footnotesize\ttfamily int draw\+\_\+string (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{string,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Draws a string of letters calling \doxylink{draw__elements_8c_a29168c20bf1b406ea45ffba62f01b6bd}{draw\+\_\+letter()} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{draw__elements_8c_a7182ce8f8b63f687878679ba2d582699}\label{draw__elements_8c_a7182ce8f8b63f687878679ba2d582699} 
+\index{draw\_elements.c@{draw\_elements.c}!resetBullets@{resetBullets}}
+\index{resetBullets@{resetBullets}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{resetBullets()}{resetBullets()}}
+{\footnotesize\ttfamily void reset\+Bullets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reset the bullet\textquotesingle{}s state to inactive. 
+
+\Hypertarget{draw__elements_8c_a0e8a5a333560c7fed74c58558a866bc9}\label{draw__elements_8c_a0e8a5a333560c7fed74c58558a866bc9} 
+\index{draw\_elements.c@{draw\_elements.c}!tostring@{tostring}}
+\index{tostring@{tostring}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{tostring()}{tostring()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} tostring (\begin{DoxyParamCaption}\item[{char}]{str\mbox{[}$\,$\mbox{]},  }\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Converts an integer to a string. 
+
+\Hypertarget{draw__elements_8c_a3ccbe532152ba0d5d45ab79cf9e6aad0}\label{draw__elements_8c_a3ccbe532152ba0d5d45ab79cf9e6aad0} 
+\index{draw\_elements.c@{draw\_elements.c}!updateBullets@{updateBullets}}
+\index{updateBullets@{updateBullets}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{updateBullets()}{updateBullets()}}
+{\footnotesize\ttfamily void update\+Bullets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+updates the bullet movement 
+
+\Hypertarget{draw__elements_8c_a64a2325b5505e8bad50f421b0f208251}\label{draw__elements_8c_a64a2325b5505e8bad50f421b0f208251} 
+\index{draw\_elements.c@{draw\_elements.c}!updateLeaderboard@{updateLeaderboard}}
+\index{updateLeaderboard@{updateLeaderboard}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{updateLeaderboard()}{updateLeaderboard()}}
+{\footnotesize\ttfamily void update\+Leaderboard (\begin{DoxyParamCaption}\item[{int}]{new\+Score }\end{DoxyParamCaption})}
+
+
+
+Updates the leaderboard with the new score. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Score} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{draw__elements_8c_ad6e19525761212e53586bbb10c460ede}\label{draw__elements_8c_ad6e19525761212e53586bbb10c460ede} 
+\index{draw\_elements.c@{draw\_elements.c}!bullets@{bullets}}
+\index{bullets@{bullets}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{bullets}{bullets}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_bullet}{Bullet}} bullets\mbox{[}\mbox{\hyperlink{draw__elements_8h_a4331843c2698da5ccb18562eb1485681}{MAX\+\_\+\+BULLETS}}\mbox{]}}
+
+\Hypertarget{draw__elements_8c_a5b22206462b1452e142df7feba6bb576}\label{draw__elements_8c_a5b22206462b1452e142df7feba6bb576} 
+\index{draw\_elements.c@{draw\_elements.c}!enemyBullets@{enemyBullets}}
+\index{enemyBullets@{enemyBullets}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{enemyBullets}{enemyBullets}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_bullet}{Bullet}} enemy\+Bullets\mbox{[}2 \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{draw__elements_8h_a4331843c2698da5ccb18562eb1485681}{MAX\+\_\+\+BULLETS}}\mbox{]}}
+
+\Hypertarget{draw__elements_8c_a44c3e2243e8fc75056710ef4e93010c1}\label{draw__elements_8c_a44c3e2243e8fc75056710ef4e93010c1} 
+\index{draw\_elements.c@{draw\_elements.c}!numBullets@{numBullets}}
+\index{numBullets@{numBullets}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{numBullets}{numBullets}}
+{\footnotesize\ttfamily int num\+Bullets = 0}
+
+\Hypertarget{draw__elements_8c_a9fa608ad90128997fdbb7cc64c108594}\label{draw__elements_8c_a9fa608ad90128997fdbb7cc64c108594} 
+\index{draw\_elements.c@{draw\_elements.c}!numEnemyBullets@{numEnemyBullets}}
+\index{numEnemyBullets@{numEnemyBullets}!draw\_elements.c@{draw\_elements.c}}
+\doxysubsubsection{\texorpdfstring{numEnemyBullets}{numEnemyBullets}}
+{\footnotesize\ttfamily int num\+Enemy\+Bullets = 0}
+

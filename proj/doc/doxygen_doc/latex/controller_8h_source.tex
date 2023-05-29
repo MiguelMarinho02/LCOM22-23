@@ -1,0 +1,26 @@
+\doxysection{controller.\+h}
+\hypertarget{controller_8h_source}{}\label{controller_8h_source}\index{src/lib/controller.h@{src/lib/controller.h}}
+\mbox{\hyperlink{controller_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <lcom/lcf.h>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{draw__elements_8h}{draw\_elements.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ RIGHT\_LIMIT\ (int)\ getxRes()\ -\/\ 132}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ LEFT\_LIMIT\ 100}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ NUM\_ALIENS\ 50}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{controller_8h_a4ca269cf93df1b512b52174c1a256fe5}{dir}}\ \{\mbox{\hyperlink{controller_8h_a4ca269cf93df1b512b52174c1a256fe5aec8379af7490bb9eaaf579cf17876f38}{RIGHT}},\mbox{\hyperlink{controller_8h_a4ca269cf93df1b512b52174c1a256fe5adb45120aafd37a973140edee24708065}{LEFT}}\};}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{controller_8h_a038f6b75a64740beec91e32197b8fec5}{movePlayer}}(\textcolor{keywordtype}{int}\ offset,\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{controller_8h_a4ca269cf93df1b512b52174c1a256fe5}{dir}});\ \textcolor{comment}{//false\ for\ left,\ true\ for\ right}}
+\DoxyCodeLine{00013\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{controller_8h_ad9b56a7ea51e484790e106cdea2cc257}{moveAlien}}(\mbox{\hyperlink{struct_sprite}{Sprite}}\ *alien,\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{controller_8c_a89d98e267476d74d3dea65f84ddd830a}{direction}},\ \textcolor{keywordtype}{bool}\ ver);\ \textcolor{comment}{//false\ for\ left,\ true\ for\ right\ ||\ true\ for\ vertical}}
+\DoxyCodeLine{00014\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{controller_8h_a23008e0752e6dbca81d62de3472e0a19}{moveAliens}}();}
+\DoxyCodeLine{00015\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{controller_8h_adff4ab4d68906a87c30ff5120a51529f}{moveCursor}}(int16\_t\ x,\ int16\_t\ y);}
+\DoxyCodeLine{00016\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{controller_8h_a19c3a6923b295d8987c4b34ec7c57ec9}{checkColisionWithEnemyShip}}();}
+\DoxyCodeLine{00017\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{controller_8h_a75779f64f58b72f5f2401b135249b353}{enemyBlastsControl}}();}
+\DoxyCodeLine{00018\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{controller_8h_a2befe9040125f881999459e590f456b8}{checkColisionWithPlayerShip}}();}
+\DoxyCodeLine{00019\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{controller_8h_a693626f4e4922ad341ae65c58d649131}{checkColisionWithEnemyBullet}}();}
+\DoxyCodeLine{00020\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{controller_8h_aadee57030dc16b12b729b92266325096}{allEnemiesDead}}();}
+
+\end{DoxyCode}

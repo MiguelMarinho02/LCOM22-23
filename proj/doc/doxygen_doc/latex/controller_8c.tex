@@ -1,0 +1,224 @@
+\doxysection{src/lib/controller.c File Reference}
+\hypertarget{controller_8c}{}\label{controller_8c}\index{src/lib/controller.c@{src/lib/controller.c}}
+{\ttfamily \#include \"{}controller.\+h\"{}}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+Include dependency graph for controller.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{controller_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{controller_8c_adc2ec88fc880e429053799f284aebf62}{move\+Player}} (int offset, enum \mbox{\hyperlink{controller_8h_a4ca269cf93df1b512b52174c1a256fe5}{dir}} d)
+\begin{DoxyCompactList}\small\item\em Moves player according to the offset and direction given, left or right. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{controller_8c_af43ffc967ef35ede1d13bdab8e1b3c62}{move\+Alien}} (\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}alien, bool \mbox{\hyperlink{controller_8h_a4ca269cf93df1b512b52174c1a256fe5}{dir}}, bool ver)
+\begin{DoxyCompactList}\small\item\em Updates aliens positions according to directions given, left or right or also vertically. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{controller_8c_a23008e0752e6dbca81d62de3472e0a19}{move\+Aliens}} ()
+\begin{DoxyCompactList}\small\item\em Based on extreme ends (left and right) aliens position, the direction in which they will be moving next is updated and all alien\textquotesingle{}s positions are updated by calling move\+Alien(alient,direction,vert) for each of them. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{controller_8c_adff4ab4d68906a87c30ff5120a51529f}{move\+Cursor}} (int16\+\_\+t x, int16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Moves cursor to the updated position. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{controller_8c_a75779f64f58b72f5f2401b135249b353}{enemy\+Blasts\+Control}} ()
+\begin{DoxyCompactList}\small\item\em Generates a random number between 0 and 49 and checks if the alien in that position is active, if so, it creates a bullet coming from it. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{controller_8c_a19c3a6923b295d8987c4b34ec7c57ec9}{check\+Colision\+With\+Enemy\+Ship}} ()
+\begin{DoxyCompactList}\small\item\em Checks if a bullet has colided with an alien, returns the score according to that. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{controller_8c_a2befe9040125f881999459e590f456b8}{check\+Colision\+With\+Player\+Ship}} ()
+\begin{DoxyCompactList}\small\item\em Checks if a bullet has colided with the player\textquotesingle{}s ship, returns the number of hp deducted. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{controller_8c_a693626f4e4922ad341ae65c58d649131}{check\+Colision\+With\+Enemy\+Bullet}} ()
+\begin{DoxyCompactList}\small\item\em checks if a bullet has colided with an alien\textquotesingle{}s bullet \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{controller_8c_aadee57030dc16b12b729b92266325096}{all\+Enemies\+Dead}} ()
+\begin{DoxyCompactList}\small\item\em If all enemies are dead, returns true, else returns false. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{controller_8c_a89d98e267476d74d3dea65f84ddd830a}{direction}} = true
+\item 
+bool \mbox{\hyperlink{controller_8c_a0ef08fd776d2f8ef00eeaea1128aa89c}{vertical}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{controller_8c_aadee57030dc16b12b729b92266325096}\label{controller_8c_aadee57030dc16b12b729b92266325096} 
+\index{controller.c@{controller.c}!allEnemiesDead@{allEnemiesDead}}
+\index{allEnemiesDead@{allEnemiesDead}!controller.c@{controller.c}}
+\doxysubsubsection{\texorpdfstring{allEnemiesDead()}{allEnemiesDead()}}
+{\footnotesize\ttfamily bool all\+Enemies\+Dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+If all enemies are dead, returns true, else returns false. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\Hypertarget{controller_8c_a693626f4e4922ad341ae65c58d649131}\label{controller_8c_a693626f4e4922ad341ae65c58d649131} 
+\index{controller.c@{controller.c}!checkColisionWithEnemyBullet@{checkColisionWithEnemyBullet}}
+\index{checkColisionWithEnemyBullet@{checkColisionWithEnemyBullet}!controller.c@{controller.c}}
+\doxysubsubsection{\texorpdfstring{checkColisionWithEnemyBullet()}{checkColisionWithEnemyBullet()}}
+{\footnotesize\ttfamily void check\+Colision\+With\+Enemy\+Bullet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+checks if a bullet has colided with an alien\textquotesingle{}s bullet 
+
+\Hypertarget{controller_8c_a19c3a6923b295d8987c4b34ec7c57ec9}\label{controller_8c_a19c3a6923b295d8987c4b34ec7c57ec9} 
+\index{controller.c@{controller.c}!checkColisionWithEnemyShip@{checkColisionWithEnemyShip}}
+\index{checkColisionWithEnemyShip@{checkColisionWithEnemyShip}!controller.c@{controller.c}}
+\doxysubsubsection{\texorpdfstring{checkColisionWithEnemyShip()}{checkColisionWithEnemyShip()}}
+{\footnotesize\ttfamily int check\+Colision\+With\+Enemy\+Ship (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if a bullet has colided with an alien, returns the score according to that. 
+
+\begin{DoxyReturn}{Returns}
+int score 
+\end{DoxyReturn}
+\Hypertarget{controller_8c_a2befe9040125f881999459e590f456b8}\label{controller_8c_a2befe9040125f881999459e590f456b8} 
+\index{controller.c@{controller.c}!checkColisionWithPlayerShip@{checkColisionWithPlayerShip}}
+\index{checkColisionWithPlayerShip@{checkColisionWithPlayerShip}!controller.c@{controller.c}}
+\doxysubsubsection{\texorpdfstring{checkColisionWithPlayerShip()}{checkColisionWithPlayerShip()}}
+{\footnotesize\ttfamily int check\+Colision\+With\+Player\+Ship (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if a bullet has colided with the player\textquotesingle{}s ship, returns the number of hp deducted. 
+
+\begin{DoxyReturn}{Returns}
+int hp\+Deducted 
+\end{DoxyReturn}
+\Hypertarget{controller_8c_a75779f64f58b72f5f2401b135249b353}\label{controller_8c_a75779f64f58b72f5f2401b135249b353} 
+\index{controller.c@{controller.c}!enemyBlastsControl@{enemyBlastsControl}}
+\index{enemyBlastsControl@{enemyBlastsControl}!controller.c@{controller.c}}
+\doxysubsubsection{\texorpdfstring{enemyBlastsControl()}{enemyBlastsControl()}}
+{\footnotesize\ttfamily int enemy\+Blasts\+Control (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Generates a random number between 0 and 49 and checks if the alien in that position is active, if so, it creates a bullet coming from it. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{controller_8c_a75779f64f58b72f5f2401b135249b353_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{controller_8c_a75779f64f58b72f5f2401b135249b353_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{controller_8c_af43ffc967ef35ede1d13bdab8e1b3c62}\label{controller_8c_af43ffc967ef35ede1d13bdab8e1b3c62} 
+\index{controller.c@{controller.c}!moveAlien@{moveAlien}}
+\index{moveAlien@{moveAlien}!controller.c@{controller.c}}
+\doxysubsubsection{\texorpdfstring{moveAlien()}{moveAlien()}}
+{\footnotesize\ttfamily int move\+Alien (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{alien,  }\item[{bool}]{dir,  }\item[{bool}]{ver }\end{DoxyParamCaption})}
+
+
+
+Updates aliens positions according to directions given, left or right or also vertically. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alien} & aliens sprite \\
+\hline
+{\em direction} & false for left, true for right \\
+\hline
+{\em ver} & if true, aliens will move vertically \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 
+\end{DoxyReturn}
+\Hypertarget{controller_8c_a23008e0752e6dbca81d62de3472e0a19}\label{controller_8c_a23008e0752e6dbca81d62de3472e0a19} 
+\index{controller.c@{controller.c}!moveAliens@{moveAliens}}
+\index{moveAliens@{moveAliens}!controller.c@{controller.c}}
+\doxysubsubsection{\texorpdfstring{moveAliens()}{moveAliens()}}
+{\footnotesize\ttfamily int move\+Aliens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Based on extreme ends (left and right) aliens position, the direction in which they will be moving next is updated and all alien\textquotesingle{}s positions are updated by calling move\+Alien(alient,direction,vert) for each of them. 
+
+\begin{DoxyReturn}{Returns}
+int 0 
+\end{DoxyReturn}
+\Hypertarget{controller_8c_adff4ab4d68906a87c30ff5120a51529f}\label{controller_8c_adff4ab4d68906a87c30ff5120a51529f} 
+\index{controller.c@{controller.c}!moveCursor@{moveCursor}}
+\index{moveCursor@{moveCursor}!controller.c@{controller.c}}
+\doxysubsubsection{\texorpdfstring{moveCursor()}{moveCursor()}}
+{\footnotesize\ttfamily int move\+Cursor (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{x,  }\item[{int16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+Moves cursor to the updated position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & position \\
+\hline
+{\em y} & position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 
+\end{DoxyReturn}
+\Hypertarget{controller_8c_adc2ec88fc880e429053799f284aebf62}\label{controller_8c_adc2ec88fc880e429053799f284aebf62} 
+\index{controller.c@{controller.c}!movePlayer@{movePlayer}}
+\index{movePlayer@{movePlayer}!controller.c@{controller.c}}
+\doxysubsubsection{\texorpdfstring{movePlayer()}{movePlayer()}}
+{\footnotesize\ttfamily int move\+Player (\begin{DoxyParamCaption}\item[{int}]{offset,  }\item[{enum \mbox{\hyperlink{controller_8h_a4ca269cf93df1b512b52174c1a256fe5}{dir}}}]{d }\end{DoxyParamCaption})}
+
+
+
+Moves player according to the offset and direction given, left or right. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & \\
+\hline
+{\em d} & direction\+: LEFT or RIGHT \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{controller_8c_adc2ec88fc880e429053799f284aebf62_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{controller_8c_adc2ec88fc880e429053799f284aebf62_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{controller_8c_a89d98e267476d74d3dea65f84ddd830a}\label{controller_8c_a89d98e267476d74d3dea65f84ddd830a} 
+\index{controller.c@{controller.c}!direction@{direction}}
+\index{direction@{direction}!controller.c@{controller.c}}
+\doxysubsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily bool direction = true}
+
+\Hypertarget{controller_8c_a0ef08fd776d2f8ef00eeaea1128aa89c}\label{controller_8c_a0ef08fd776d2f8ef00eeaea1128aa89c} 
+\index{controller.c@{controller.c}!vertical@{vertical}}
+\index{vertical@{vertical}!controller.c@{controller.c}}
+\doxysubsubsection{\texorpdfstring{vertical}{vertical}}
+{\footnotesize\ttfamily bool vertical = false}
+

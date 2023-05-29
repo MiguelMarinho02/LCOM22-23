@@ -1,0 +1,41 @@
+\doxysection{draw\+\_\+elements.\+h}
+\hypertarget{draw__elements_8h_source}{}\label{draw__elements_8h_source}\index{src/lib/draw\_elements.h@{src/lib/draw\_elements.h}}
+\mbox{\hyperlink{draw__elements_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <lcom/lcf.h>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{gpu_8h}{gpu.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sprite_8h}{sprite.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{rtc_8h}{rtc.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ MAX\_BULLETS\ 200}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{draw__elements_8h_ad3691991b3af52e1fbf2b67ed919e920}{draw\_player}}();}
+\DoxyCodeLine{00010\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{draw__elements_8h_a6b9a9c8520d4da6e26d9846eecc4f1d0}{clear\_player}}();}
+\DoxyCodeLine{00011\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{draw__elements_8h_a46d4d80733936df5b4691bead8b72187}{draw\_aliens}}(\textcolor{keywordtype}{int}\ spriteNum);}
+\DoxyCodeLine{00012\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{draw__elements_8h_a5b17322d335293731fc0014d18093f2e}{clear\_aliens}}();}
+\DoxyCodeLine{00013\ \textcolor{comment}{//int\ draw\_bullet();}}
+\DoxyCodeLine{00014\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{draw__elements_8h_a6f952ec5dffb57c1018d4e1ba0565efb}{draw\_elements}}(\textcolor{keywordtype}{int}\ spriteNum,\ \textcolor{keywordtype}{int}\ score,\ \textcolor{keywordtype}{int}\ timer,\ \textcolor{keywordtype}{int}\ hp);}
+\DoxyCodeLine{00015\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{draw__elements_8h_a9ea6d831e691382ae3872139b0e140e0}{clear\_elements}}();}
+\DoxyCodeLine{00016\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{draw__elements_8h_a7d771989b41395d6d703f523c6fc22eb}{draw\_menu}}();}
+\DoxyCodeLine{00017\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{draw__elements_8h_a5f5131a2e10a6b3d67b5077ac966ebf9}{clear\_menu}}();}
+\DoxyCodeLine{00018\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{draw__elements_8h_a29168c20bf1b406ea45ffba62f01b6bd}{draw\_letter}}(\textcolor{keywordtype}{char}\ letter,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00019\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{draw__elements_8h_a762343144f93321e0434a89bf459ece1}{draw\_string}}(\textcolor{keywordtype}{char}\ *\textcolor{keywordtype}{string},\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00020\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{draw__elements_8h_ac17b93ffa643351b1072d0238fae4c8c}{draw\_arena}}(\textcolor{keywordtype}{int}\ score,\ \textcolor{keywordtype}{int}\ timer,\ \textcolor{keywordtype}{int}\ hp);}
+\DoxyCodeLine{00021\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{draw__elements_8h_a7182ce8f8b63f687878679ba2d582699}{resetBullets}}();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{draw__elements_8h_a3ccbe532152ba0d5d45ab79cf9e6aad0}{updateBullets}}();}
+\DoxyCodeLine{00024\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{draw__elements_8h_a9427751110965a8dc8560d650b94ec71}{createBullet}}(\textcolor{keywordtype}{int}\ x\_dest,\ \textcolor{keywordtype}{int}\ y\_dest);}
+\DoxyCodeLine{00025\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{draw__elements_8h_a587d9c8785cb31e3cdecceee901525e2}{displayLeaderboard}}();}
+\DoxyCodeLine{00026\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{draw__elements_8h_a64a2325b5505e8bad50f421b0f208251}{updateLeaderboard}}(\textcolor{keywordtype}{int}\ newScore);}
+\DoxyCodeLine{00027\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{draw__elements_8h_aff3334e480b5dbfadec71ec071555aaa}{cleanLeaderboard}}();}
+\DoxyCodeLine{00028\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{draw__elements_8h_a8dc791fd2f31c50dcccf756f6ddea66f}{clear\_leaderboard}}();}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_player_ace6abae8d66534ad0a1fd6458f786a6e}{score}};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_date}{Date}}\ date;}
+\DoxyCodeLine{00033\ \}\mbox{\hyperlink{struct_player}{Player}};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{draw__elements_8h_a19ae330d4e3aeab1df508a45f590a1f9}{createBulletEnemy}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+
+\end{DoxyCode}

@@ -1,0 +1,11 @@
+<map id="src/lib/controller.h" name="src/lib/controller.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="160,5,285,31"/>
+<area shape="rect" id="Node000002" href="$controller_8c.html" title=" " alt="" coords="5,79,131,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,40,95,81,93,76,182,35"/>
+<area shape="rect" id="Node000003" href="$game__loop_8h.html" title=" " alt="" coords="155,79,290,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="225,46,225,78,220,78,220,46"/>
+<area shape="rect" id="Node000005" href="$mouse_8c.html" title=" " alt="" coords="314,79,425,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="262,36,346,76,344,81,260,40"/>
+<area shape="rect" id="Node000004" href="$game__loop_8c.html" title=" " alt="" coords="155,152,290,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="225,120,225,151,220,151,220,120"/>
+</map>

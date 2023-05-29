@@ -1,0 +1,14 @@
+var searchData=
+[
+  ['vertical_0',['vertical',['../controller_8c.html#a0ef08fd776d2f8ef00eeaea1128aa89c',1,'controller.c']]],
+  ['vg_5fclear_1',['vg_clear',['../gpu_8c.html#a2ee78217fd27b1781cd1a4bc42a793e2',1,'vg_clear(xpm_image_t image, uint16_t x, uint16_t y):&#160;gpu.c'],['../gpu_8h.html#a2ee78217fd27b1781cd1a4bc42a793e2',1,'vg_clear(xpm_image_t image, uint16_t x, uint16_t y):&#160;gpu.c']]],
+  ['vg_5fclear_5farea_2',['vg_clear_area',['../gpu_8c.html#a23e0d37a8d9f2b8acd5ee615693b963b',1,'vg_clear_area(uint16_t x, uint16_t y, uint16_t x_len, uint16_t y_len):&#160;gpu.c'],['../gpu_8h.html#a23e0d37a8d9f2b8acd5ee615693b963b',1,'vg_clear_area(uint16_t x, uint16_t y, uint16_t x_len, uint16_t y_len):&#160;gpu.c']]],
+  ['vg_5fdraw_5fchar_3',['vg_draw_char',['../gpu_8c.html#a727099a2fe7a82cc4eaf2e484ce3f966',1,'vg_draw_char(xpm_image_t image, uint16_t x, uint16_t y, uint8_t *pnt):&#160;gpu.c'],['../gpu_8h.html#a727099a2fe7a82cc4eaf2e484ce3f966',1,'vg_draw_char(xpm_image_t image, uint16_t x, uint16_t y, uint8_t *pnt):&#160;gpu.c']]],
+  ['vg_5fdraw_5fhline_4',['vg_draw_hline',['../gpu_8c.html#a5e5b25bd525250f61f40b9e9f212d5e6',1,'vg_draw_hline(uint16_t x, uint16_t y, uint16_t len, uint32_t color):&#160;gpu.c'],['../gpu_8h.html#a5e5b25bd525250f61f40b9e9f212d5e6',1,'vg_draw_hline(uint16_t x, uint16_t y, uint16_t len, uint32_t color):&#160;gpu.c']]],
+  ['vg_5fdraw_5fpixel_5',['vg_draw_pixel',['../gpu_8c.html#a6f895de9725f9f231f9a7f74b6087f60',1,'vg_draw_pixel(uint16_t x, uint16_t y, uint32_t color):&#160;gpu.c'],['../gpu_8h.html#a6f895de9725f9f231f9a7f74b6087f60',1,'vg_draw_pixel(uint16_t x, uint16_t y, uint32_t color):&#160;gpu.c']]],
+  ['vg_5fdraw_5fvline_6',['vg_draw_vline',['../gpu_8c.html#a1135e6421577648c6d1c0abc1e971663',1,'vg_draw_vline(uint16_t x, uint16_t y, uint16_t len, uint32_t color):&#160;gpu.c'],['../gpu_8h.html#a1135e6421577648c6d1c0abc1e971663',1,'vg_draw_vline(uint16_t x, uint16_t y, uint16_t len, uint32_t color):&#160;gpu.c']]],
+  ['vg_5finit_7',['vg_init',['../gpu_8c.html#afa0e432c3ebeefc29a59abc4d22918df',1,'gpu.c']]],
+  ['vg_5fset_5fmode_8',['vg_set_mode',['../gpu_8c.html#a3eaed521041b153cd8f9c5d371b393ff',1,'vg_set_mode(uint16_t mode):&#160;gpu.c'],['../gpu_8h.html#a3eaed521041b153cd8f9c5d371b393ff',1,'vg_set_mode(uint16_t mode):&#160;gpu.c']]],
+  ['vg_5fxpm_9',['vg_xpm',['../gpu_8c.html#a83b9c037deb528ab7451ecff8c9821f5',1,'vg_xpm(xpm_image_t image, uint16_t x, uint16_t y):&#160;gpu.c'],['../gpu_8h.html#a9b69589f0a8c89870c867c50f556afd7',1,'vg_xpm(xpm_image_t, uint16_t x, uint16_t y):&#160;gpu.c']]],
+  ['vg_5fxpm_5fmap_5fto_5fimage_10',['vg_xpm_map_to_image',['../gpu_8c.html#a1be914380d16c4861634dbbb46a330eb',1,'vg_xpm_map_to_image(xpm_map_t xpm):&#160;gpu.c'],['../gpu_8h.html#a1be914380d16c4861634dbbb46a330eb',1,'vg_xpm_map_to_image(xpm_map_t xpm):&#160;gpu.c']]]
+];

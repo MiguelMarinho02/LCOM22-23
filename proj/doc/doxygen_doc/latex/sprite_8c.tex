@@ -1,0 +1,134 @@
+\doxysection{src/lib/sprite.c File Reference}
+\hypertarget{sprite_8c}{}\label{sprite_8c}\index{src/lib/sprite.c@{src/lib/sprite.c}}
+{\ttfamily \#include \"{}sprite.\+h\"{}}\newline
+Include dependency graph for sprite.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8c_aca9a7cf77724c985eef4b68dedca116b}{get\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Get the \doxylink{struct_player}{Player} \doxylink{struct_sprite}{Sprite} object. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{sprite_8c_a48f684fed58b37139bf8a3b36c689f6a}{create\+Sprites}} ()
+\begin{DoxyCompactList}\small\item\em Creates Sprites of game\textquotesingle{}s elements. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \mbox{\hyperlink{sprite_8c_a617bd3ed3117d64f08a1a550c89c2d87}{get\+Alien\+Sprite}} (int sprite\+Num)
+\begin{DoxyCompactList}\small\item\em Get the Alien \doxylink{struct_sprite}{Sprite} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \mbox{\hyperlink{sprite_8c_ac2b4fecc5f0bfd29b7759bb0c18eeeea}{player}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \mbox{\hyperlink{sprite_8c_a49296de3d183bbc9b6375d7454725777}{enemy\+Blasts}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \mbox{\hyperlink{sprite_8c_afee87483f96348bb5b4534e87f7db69f}{player\+Blasts}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \mbox{\hyperlink{sprite_8c_ae21a4080152d6fae619501b97da0c0bc}{font}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \mbox{\hyperlink{sprite_8c_abf741397f1ddefe4ef855a328786c3ca}{aliens}} \mbox{[}50\mbox{]}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \mbox{\hyperlink{sprite_8c_a76637643148291960b948adc755cf900}{bullet}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \mbox{\hyperlink{sprite_8c_aceea81b1190b46f95656319e865fadc6}{cursor}}
+\item 
+bool \mbox{\hyperlink{sprite_8c_aaaf85a4b3ea50e67d962b261141a270f}{aliens\+\_\+active}} \mbox{[}50\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{sprite_8c_a48f684fed58b37139bf8a3b36c689f6a}\label{sprite_8c_a48f684fed58b37139bf8a3b36c689f6a} 
+\index{sprite.c@{sprite.c}!createSprites@{createSprites}}
+\index{createSprites@{createSprites}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{createSprites()}{createSprites()}}
+{\footnotesize\ttfamily int() create\+Sprites (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates Sprites of game\textquotesingle{}s elements. 
+
+\Hypertarget{sprite_8c_a617bd3ed3117d64f08a1a550c89c2d87}\label{sprite_8c_a617bd3ed3117d64f08a1a550c89c2d87} 
+\index{sprite.c@{sprite.c}!getAlienSprite@{getAlienSprite}}
+\index{getAlienSprite@{getAlienSprite}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{getAlienSprite()}{getAlienSprite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}} get\+Alien\+Sprite (\begin{DoxyParamCaption}\item[{int}]{sprite\+Num }\end{DoxyParamCaption})}
+
+
+
+Get the Alien \doxylink{struct_sprite}{Sprite} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\+Num} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+respective \doxylink{struct_sprite}{Sprite} 
+\end{DoxyReturn}
+\Hypertarget{sprite_8c_aca9a7cf77724c985eef4b68dedca116b}\label{sprite_8c_aca9a7cf77724c985eef4b68dedca116b} 
+\index{sprite.c@{sprite.c}!getPlayer@{getPlayer}}
+\index{getPlayer@{getPlayer}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{getPlayer()}{getPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} get\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the \doxylink{struct_player}{Player} \doxylink{struct_sprite}{Sprite} object. 
+
+\begin{DoxyReturn}{Returns}
+the player \doxylink{struct_sprite}{Sprite} ~\newline
+ 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{sprite_8c_abf741397f1ddefe4ef855a328786c3ca}\label{sprite_8c_abf741397f1ddefe4ef855a328786c3ca} 
+\index{sprite.c@{sprite.c}!aliens@{aliens}}
+\index{aliens@{aliens}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{aliens}{aliens}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}} aliens\mbox{[}50\mbox{]}}
+
+\Hypertarget{sprite_8c_aaaf85a4b3ea50e67d962b261141a270f}\label{sprite_8c_aaaf85a4b3ea50e67d962b261141a270f} 
+\index{sprite.c@{sprite.c}!aliens\_active@{aliens\_active}}
+\index{aliens\_active@{aliens\_active}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{aliens\_active}{aliens\_active}}
+{\footnotesize\ttfamily bool aliens\+\_\+active\mbox{[}50\mbox{]}}
+
+\Hypertarget{sprite_8c_a76637643148291960b948adc755cf900}\label{sprite_8c_a76637643148291960b948adc755cf900} 
+\index{sprite.c@{sprite.c}!bullet@{bullet}}
+\index{bullet@{bullet}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{bullet}{bullet}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}} bullet}
+
+\Hypertarget{sprite_8c_aceea81b1190b46f95656319e865fadc6}\label{sprite_8c_aceea81b1190b46f95656319e865fadc6} 
+\index{sprite.c@{sprite.c}!cursor@{cursor}}
+\index{cursor@{cursor}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{cursor}{cursor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}} cursor}
+
+\Hypertarget{sprite_8c_a49296de3d183bbc9b6375d7454725777}\label{sprite_8c_a49296de3d183bbc9b6375d7454725777} 
+\index{sprite.c@{sprite.c}!enemyBlasts@{enemyBlasts}}
+\index{enemyBlasts@{enemyBlasts}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{enemyBlasts}{enemyBlasts}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}} enemy\+Blasts}
+
+\Hypertarget{sprite_8c_ae21a4080152d6fae619501b97da0c0bc}\label{sprite_8c_ae21a4080152d6fae619501b97da0c0bc} 
+\index{sprite.c@{sprite.c}!font@{font}}
+\index{font@{font}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}} font}
+
+\Hypertarget{sprite_8c_ac2b4fecc5f0bfd29b7759bb0c18eeeea}\label{sprite_8c_ac2b4fecc5f0bfd29b7759bb0c18eeeea} 
+\index{sprite.c@{sprite.c}!player@{player}}
+\index{player@{player}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}} player}
+
+\Hypertarget{sprite_8c_afee87483f96348bb5b4534e87f7db69f}\label{sprite_8c_afee87483f96348bb5b4534e87f7db69f} 
+\index{sprite.c@{sprite.c}!playerBlasts@{playerBlasts}}
+\index{playerBlasts@{playerBlasts}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{playerBlasts}{playerBlasts}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}} player\+Blasts}
+

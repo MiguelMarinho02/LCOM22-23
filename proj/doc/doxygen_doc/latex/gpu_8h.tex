@@ -1,0 +1,127 @@
+\doxysection{src/lib/gpu.h File Reference}
+\hypertarget{gpu_8h}{}\label{gpu_8h}\index{src/lib/gpu.h@{src/lib/gpu.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for gpu.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{gpu_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gpu_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{gpu_8h_a3eaed521041b153cd8f9c5d371b393ff}{vg\+\_\+set\+\_\+mode}} (uint16\+\_\+t mode)
+\item 
+int \mbox{\hyperlink{gpu_8h_a6f895de9725f9f231f9a7f74b6087f60}{vg\+\_\+draw\+\_\+pixel}} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color)
+\item 
+int \mbox{\hyperlink{gpu_8h_a9b69589f0a8c89870c867c50f556afd7}{vg\+\_\+xpm}} (xpm\+\_\+image\+\_\+t, uint16\+\_\+t x, uint16\+\_\+t y)
+\item 
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{gpu_8h_a1be914380d16c4861634dbbb46a330eb}{vg\+\_\+xpm\+\_\+map\+\_\+to\+\_\+image}} (xpm\+\_\+map\+\_\+t xpm)
+\item 
+int \mbox{\hyperlink{gpu_8h_a2ee78217fd27b1781cd1a4bc42a793e2}{vg\+\_\+clear}} (xpm\+\_\+image\+\_\+t image, uint16\+\_\+t x, uint16\+\_\+t y)
+\item 
+int \mbox{\hyperlink{gpu_8h_af82282f9c4d3a13236fe06743d9e52f6}{getx\+Res}} ()
+\item 
+int \mbox{\hyperlink{gpu_8h_a08b26eae37f8b863984b3bef7d116236}{gety\+Res}} ()
+\item 
+int \mbox{\hyperlink{gpu_8h_ac1bdb77965fded6f767a041df5a9e47f}{flip\+\_\+buffer}} ()
+\item 
+int \mbox{\hyperlink{gpu_8h_afd868599f5114fb49d19022ac48ebd96}{free\+\_\+buffers}} ()
+\item 
+int \mbox{\hyperlink{gpu_8h_a727099a2fe7a82cc4eaf2e484ce3f966}{vg\+\_\+draw\+\_\+char}} (xpm\+\_\+image\+\_\+t image, uint16\+\_\+t x, uint16\+\_\+t y, uint8\+\_\+t \texorpdfstring{$\ast$}{*}pnt)
+\item 
+int \mbox{\hyperlink{gpu_8h_a23e0d37a8d9f2b8acd5ee615693b963b}{vg\+\_\+clear\+\_\+area}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t x\+\_\+len, uint16\+\_\+t y\+\_\+len)
+\item 
+int() \mbox{\hyperlink{gpu_8h_a5e5b25bd525250f61f40b9e9f212d5e6}{vg\+\_\+draw\+\_\+hline}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t len, uint32\+\_\+t color)
+\item 
+int() \mbox{\hyperlink{gpu_8h_a1135e6421577648c6d1c0abc1e971663}{vg\+\_\+draw\+\_\+vline}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t len, uint32\+\_\+t color)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{gpu_8h_ac1bdb77965fded6f767a041df5a9e47f}\label{gpu_8h_ac1bdb77965fded6f767a041df5a9e47f} 
+\index{gpu.h@{gpu.h}!flip\_buffer@{flip\_buffer}}
+\index{flip\_buffer@{flip\_buffer}!gpu.h@{gpu.h}}
+\doxysubsubsection{\texorpdfstring{flip\_buffer()}{flip\_buffer()}}
+{\footnotesize\ttfamily int flip\+\_\+buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{gpu_8h_afd868599f5114fb49d19022ac48ebd96}\label{gpu_8h_afd868599f5114fb49d19022ac48ebd96} 
+\index{gpu.h@{gpu.h}!free\_buffers@{free\_buffers}}
+\index{free\_buffers@{free\_buffers}!gpu.h@{gpu.h}}
+\doxysubsubsection{\texorpdfstring{free\_buffers()}{free\_buffers()}}
+{\footnotesize\ttfamily int free\+\_\+buffers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{gpu_8h_af82282f9c4d3a13236fe06743d9e52f6}\label{gpu_8h_af82282f9c4d3a13236fe06743d9e52f6} 
+\index{gpu.h@{gpu.h}!getxRes@{getxRes}}
+\index{getxRes@{getxRes}!gpu.h@{gpu.h}}
+\doxysubsubsection{\texorpdfstring{getxRes()}{getxRes()}}
+{\footnotesize\ttfamily int getx\+Res (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{gpu_8h_a08b26eae37f8b863984b3bef7d116236}\label{gpu_8h_a08b26eae37f8b863984b3bef7d116236} 
+\index{gpu.h@{gpu.h}!getyRes@{getyRes}}
+\index{getyRes@{getyRes}!gpu.h@{gpu.h}}
+\doxysubsubsection{\texorpdfstring{getyRes()}{getyRes()}}
+{\footnotesize\ttfamily int gety\+Res (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{gpu_8h_a2ee78217fd27b1781cd1a4bc42a793e2}\label{gpu_8h_a2ee78217fd27b1781cd1a4bc42a793e2} 
+\index{gpu.h@{gpu.h}!vg\_clear@{vg\_clear}}
+\index{vg\_clear@{vg\_clear}!gpu.h@{gpu.h}}
+\doxysubsubsection{\texorpdfstring{vg\_clear()}{vg\_clear()}}
+{\footnotesize\ttfamily int vg\+\_\+clear (\begin{DoxyParamCaption}\item[{xpm\+\_\+image\+\_\+t}]{image,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+\Hypertarget{gpu_8h_a23e0d37a8d9f2b8acd5ee615693b963b}\label{gpu_8h_a23e0d37a8d9f2b8acd5ee615693b963b} 
+\index{gpu.h@{gpu.h}!vg\_clear\_area@{vg\_clear\_area}}
+\index{vg\_clear\_area@{vg\_clear\_area}!gpu.h@{gpu.h}}
+\doxysubsubsection{\texorpdfstring{vg\_clear\_area()}{vg\_clear\_area()}}
+{\footnotesize\ttfamily int vg\+\_\+clear\+\_\+area (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{x\+\_\+len,  }\item[{uint16\+\_\+t}]{y\+\_\+len }\end{DoxyParamCaption})}
+
+\Hypertarget{gpu_8h_a727099a2fe7a82cc4eaf2e484ce3f966}\label{gpu_8h_a727099a2fe7a82cc4eaf2e484ce3f966} 
+\index{gpu.h@{gpu.h}!vg\_draw\_char@{vg\_draw\_char}}
+\index{vg\_draw\_char@{vg\_draw\_char}!gpu.h@{gpu.h}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_char()}{vg\_draw\_char()}}
+{\footnotesize\ttfamily int vg\+\_\+draw\+\_\+char (\begin{DoxyParamCaption}\item[{xpm\+\_\+image\+\_\+t}]{image,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{pnt }\end{DoxyParamCaption})}
+
+\Hypertarget{gpu_8h_a5e5b25bd525250f61f40b9e9f212d5e6}\label{gpu_8h_a5e5b25bd525250f61f40b9e9f212d5e6} 
+\index{gpu.h@{gpu.h}!vg\_draw\_hline@{vg\_draw\_hline}}
+\index{vg\_draw\_hline@{vg\_draw\_hline}!gpu.h@{gpu.h}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_hline()}{vg\_draw\_hline()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+hline (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{len,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+\Hypertarget{gpu_8h_a6f895de9725f9f231f9a7f74b6087f60}\label{gpu_8h_a6f895de9725f9f231f9a7f74b6087f60} 
+\index{gpu.h@{gpu.h}!vg\_draw\_pixel@{vg\_draw\_pixel}}
+\index{vg\_draw\_pixel@{vg\_draw\_pixel}!gpu.h@{gpu.h}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_pixel()}{vg\_draw\_pixel()}}
+{\footnotesize\ttfamily int vg\+\_\+draw\+\_\+pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+\Hypertarget{gpu_8h_a1135e6421577648c6d1c0abc1e971663}\label{gpu_8h_a1135e6421577648c6d1c0abc1e971663} 
+\index{gpu.h@{gpu.h}!vg\_draw\_vline@{vg\_draw\_vline}}
+\index{vg\_draw\_vline@{vg\_draw\_vline}!gpu.h@{gpu.h}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_vline()}{vg\_draw\_vline()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+vline (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{len,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+\Hypertarget{gpu_8h_a3eaed521041b153cd8f9c5d371b393ff}\label{gpu_8h_a3eaed521041b153cd8f9c5d371b393ff} 
+\index{gpu.h@{gpu.h}!vg\_set\_mode@{vg\_set\_mode}}
+\index{vg\_set\_mode@{vg\_set\_mode}!gpu.h@{gpu.h}}
+\doxysubsubsection{\texorpdfstring{vg\_set\_mode()}{vg\_set\_mode()}}
+{\footnotesize\ttfamily int vg\+\_\+set\+\_\+mode (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+\Hypertarget{gpu_8h_a9b69589f0a8c89870c867c50f556afd7}\label{gpu_8h_a9b69589f0a8c89870c867c50f556afd7} 
+\index{gpu.h@{gpu.h}!vg\_xpm@{vg\_xpm}}
+\index{vg\_xpm@{vg\_xpm}!gpu.h@{gpu.h}}
+\doxysubsubsection{\texorpdfstring{vg\_xpm()}{vg\_xpm()}}
+{\footnotesize\ttfamily int vg\+\_\+xpm (\begin{DoxyParamCaption}\item[{xpm\+\_\+image\+\_\+t}]{image,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+\Hypertarget{gpu_8h_a1be914380d16c4861634dbbb46a330eb}\label{gpu_8h_a1be914380d16c4861634dbbb46a330eb} 
+\index{gpu.h@{gpu.h}!vg\_xpm\_map\_to\_image@{vg\_xpm\_map\_to\_image}}
+\index{vg\_xpm\_map\_to\_image@{vg\_xpm\_map\_to\_image}!gpu.h@{gpu.h}}
+\doxysubsubsection{\texorpdfstring{vg\_xpm\_map\_to\_image()}{vg\_xpm\_map\_to\_image()}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t vg\+\_\+xpm\+\_\+map\+\_\+to\+\_\+image (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{xpm }\end{DoxyParamCaption})}
+

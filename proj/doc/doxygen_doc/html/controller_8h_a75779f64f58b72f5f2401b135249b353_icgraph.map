@@ -1,0 +1,7 @@
+<map id="enemyBlastsControl" name="enemyBlastsControl">
+<area shape="rect" id="Node000001" title="Generates a random number between 0 and 49 and checks if the alien in that position is active,..." alt="" coords="315,5,453,31"/>
+<area shape="rect" id="Node000002" href="$game__loop_8c.html#a35b2d85671d0d3eb19f7091286b46501" title="timer game handler" alt="" coords="140,5,267,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="299,21,267,21,267,15,299,15"/>
+<area shape="rect" id="Node000003" href="$game__loop_8c.html#a8c6784cce2694711456d15312cea2901" title="Loops while game is running, handles interrupts and calls the respective functions." alt="" coords="5,5,92,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="125,21,92,21,92,15,125,15"/>
+</map>

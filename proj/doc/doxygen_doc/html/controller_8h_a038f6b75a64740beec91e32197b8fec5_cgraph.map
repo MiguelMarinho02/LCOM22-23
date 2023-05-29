@@ -1,0 +1,5 @@
+<map id="movePlayer" name="movePlayer">
+<area shape="rect" id="Node000001" title="Moves player according to the offset and direction given, left or right." alt="" coords="5,5,95,31"/>
+<area shape="rect" id="Node000002" href="$sprite_8c.html#aca9a7cf77724c985eef4b68dedca116b" title="Get the Player Sprite object." alt="" coords="143,5,220,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,15,127,15,127,21,95,21"/>
+</map>

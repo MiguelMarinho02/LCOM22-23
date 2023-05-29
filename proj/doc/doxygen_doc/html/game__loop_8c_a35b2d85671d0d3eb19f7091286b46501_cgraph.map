@@ -1,0 +1,39 @@
+<map id="timer_game_state" name="timer_game_state">
+<area shape="rect" id="Node000001" title="timer game handler" alt="" coords="5,277,132,303"/>
+<area shape="rect" id="Node000002" href="$controller_8c.html#a693626f4e4922ad341ae65c58d649131" title="checks if a bullet has colided with an alien&#39;s bullet" alt="" coords="180,5,384,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,276,78,231,97,167,111,132,129,99,151,67,178,40,182,37,186,41,182,44,155,71,134,101,116,135,102,169,83,232,74,277"/>
+<area shape="rect" id="Node000003" href="$controller_8c.html#a19c3a6923b295d8987c4b34ec7c57ec9" title="Checks if a bullet has colided with an alien, returns the score according to that." alt="" coords="183,55,381,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="71,276,82,239,103,188,135,135,155,110,178,89,184,85,187,90,182,93,159,114,139,138,108,190,87,241,76,278"/>
+<area shape="rect" id="Node000004" href="$controller_8c.html#a2befe9040125f881999459e590f456b8" title="Checks if a bullet has colided with the player&#39;s ship, returns the number of hp deducted." alt="" coords="185,104,379,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="73,275,111,210,141,171,178,139,186,134,189,138,182,143,145,175,115,213,78,278"/>
+<area shape="rect" id="Node000005" href="$draw__elements_8c.html#a9ea6d831e691382ae3872139b0e140e0" title="Clears all elements on the screen." alt="" coords="227,153,337,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="79,275,119,232,148,208,179,188,210,175,212,180,181,192,151,212,123,236,83,279"/>
+<area shape="rect" id="Node000006" href="$draw__elements_8c.html#a6f952ec5dffb57c1018d4e1ba0565efb" title="Draws all the elements of the game by calling the respective functions." alt="" coords="227,203,337,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="94,274,179,237,211,227,213,232,181,242,96,279"/>
+<area shape="rect" id="Node000011" href="$controller_8c.html#a75779f64f58b72f5f2401b135249b353" title="Generates a random number between 0 and 49 and checks if the alien in that position is active,..." alt="" coords="213,252,351,277"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="132,280,197,272,198,277,133,285"/>
+<area shape="rect" id="Node000014" href="$gpu_8c.html#ac1bdb77965fded6f767a041df5a9e47f" title=" " alt="" coords="244,301,320,327"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="133,294,229,305,228,311,132,300"/>
+<area shape="rect" id="Node000015" href="$timer_8c.html#af44067a2d4a40d203fc7a643c53dadc4" title=" " alt="" coords="223,351,341,376"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="98,301,181,335,209,344,207,349,179,341,96,306"/>
+<area shape="rect" id="Node000016" href="$controller_8c.html#a23008e0752e6dbca81d62de3472e0a19" title="Based on extreme ends (left and right) aliens position, the direction in which they will be moving ne..." alt="" coords="238,400,326,425"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="83,301,124,343,151,366,181,385,224,401,222,406,179,390,148,370,120,347,79,305"/>
+<area shape="rect" id="Node000017" href="$timer_8c.html#a6ad6c2ce98078306532950ad6438d938" title=" " alt="" coords="223,449,341,475"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="78,302,115,366,145,403,181,434,209,448,207,453,179,439,141,407,111,369,74,304"/>
+<area shape="rect" id="Node000018" href="$timer_8c.html#a91a2072306c68353712a6b771287dc2c" title=" " alt="" coords="221,499,343,524"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="76,302,87,339,108,389,139,441,159,465,182,485,208,499,205,504,178,490,155,469,135,444,104,391,82,341,71,304"/>
+<area shape="rect" id="Node000019" href="$draw__elements_8c.html#a3ccbe532152ba0d5d45ab79cf9e6aad0" title="updates the bullet movement" alt="" coords="231,548,333,573"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="74,303,83,347,102,411,116,445,134,478,156,508,182,535,198,545,217,552,215,557,196,550,178,539,152,512,129,480,111,447,97,412,78,349,69,304"/>
+<area shape="rect" id="Node000007" href="$draw__elements_8c.html#a46d4d80733936df5b4691bead8b72187" title="Displays enemy of the correct sprite num." alt="" coords="453,80,543,105"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="336,207,361,200,382,188,398,171,406,153,414,134,430,115,438,109,441,114,434,119,418,137,411,155,403,174,386,192,363,204,338,212"/>
+<area shape="rect" id="Node000008" href="$draw__elements_8c.html#ac17b93ffa643351b1072d0238fae4c8c" title=" " alt="" coords="454,129,542,155"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="337,201,383,188,431,164,444,158,446,163,433,168,385,192,338,207"/>
+<area shape="rect" id="Node000009" href="$draw__elements_8c.html#ac5279c7b71c8b9f1b5c69316b3996715" title="Displays cursor in its current position." alt="" coords="452,179,544,204"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="337,207,436,195,437,201,337,212"/>
+<area shape="rect" id="Node000010" href="$draw__elements_8c.html#ad3691991b3af52e1fbf2b67ed919e920" title="Draws player in current position." alt="" coords="453,228,543,253"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="337,219,437,231,437,236,337,224"/>
+<area shape="rect" id="Node000012" href="$draw__elements_8c.html#a19ae330d4e3aeab1df508a45f590a1f9" title="Create a Bullet Enemy object." alt="" coords="432,277,564,303"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="352,270,417,278,416,283,351,275"/>
+<area shape="rect" id="Node000013" href="$sprite_8c.html#aca9a7cf77724c985eef4b68dedca116b" title="Get the Player Sprite object." alt="" coords="459,327,537,352"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="350,275,385,286,409,298,433,312,448,318,446,323,431,316,407,303,383,291,349,280"/>
+</map>

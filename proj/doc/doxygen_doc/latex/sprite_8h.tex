@@ -1,0 +1,92 @@
+\doxysection{src/lib/sprite.h File Reference}
+\hypertarget{sprite_8h}{}\label{sprite_8h}\index{src/lib/sprite.h@{src/lib/sprite.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \"{}gpu.\+h\"{}}\newline
+{\ttfamily \#include \"{}../imgs/test.\+xpm\"{}}\newline
+{\ttfamily \#include \"{}../imgs/ship32.\+xpm\"{}}\newline
+{\ttfamily \#include \"{}../imgs/enemy32\+\_\+1a.\+xpm\"{}}\newline
+{\ttfamily \#include \"{}../imgs/enemy32\+\_\+1b.\+xpm\"{}}\newline
+{\ttfamily \#include \"{}../imgs/enemy32\+\_\+1c.\+xpm\"{}}\newline
+{\ttfamily \#include \"{}../imgs/enemy32\+\_\+1d.\+xpm\"{}}\newline
+{\ttfamily \#include \"{}../imgs/bullet\+\_\+blue10.\+xpm\"{}}\newline
+{\ttfamily \#include \"{}../imgs/bullet\+\_\+red10.\+xpm\"{}}\newline
+{\ttfamily \#include \"{}../imgs/crossair22.\+xpm\"{}}\newline
+{\ttfamily \#include \"{}../imgs/text\+\_\+font.\+xpm\"{}}\newline
+{\ttfamily \#include \"{}../imgs/text\+\_\+font\+\_\+big.\+xpm\"{}}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for sprite.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_sprite}{Sprite}}
+\item 
+struct \mbox{\hyperlink{struct_bullet}{Bullet}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{sprite_8h_abd77a47badd2445bfb4f065066de62d7}{create\+Sprites}} ()
+\begin{DoxyCompactList}\small\item\em Creates Sprites of game\textquotesingle{}s elements. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_aca9a7cf77724c985eef4b68dedca116b}{get\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Get the \doxylink{struct_player}{Player} \doxylink{struct_sprite}{Sprite} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \mbox{\hyperlink{sprite_8h_a617bd3ed3117d64f08a1a550c89c2d87}{get\+Alien\+Sprite}} (int sprite\+Num)
+\begin{DoxyCompactList}\small\item\em Get the Alien \doxylink{struct_sprite}{Sprite} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{sprite_8h_abd77a47badd2445bfb4f065066de62d7}\label{sprite_8h_abd77a47badd2445bfb4f065066de62d7} 
+\index{sprite.h@{sprite.h}!createSprites@{createSprites}}
+\index{createSprites@{createSprites}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{createSprites()}{createSprites()}}
+{\footnotesize\ttfamily int create\+Sprites (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates Sprites of game\textquotesingle{}s elements. 
+
+\Hypertarget{sprite_8h_a617bd3ed3117d64f08a1a550c89c2d87}\label{sprite_8h_a617bd3ed3117d64f08a1a550c89c2d87} 
+\index{sprite.h@{sprite.h}!getAlienSprite@{getAlienSprite}}
+\index{getAlienSprite@{getAlienSprite}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{getAlienSprite()}{getAlienSprite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}} get\+Alien\+Sprite (\begin{DoxyParamCaption}\item[{int}]{sprite\+Num }\end{DoxyParamCaption})}
+
+
+
+Get the Alien \doxylink{struct_sprite}{Sprite} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\+Num} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+respective \doxylink{struct_sprite}{Sprite} 
+\end{DoxyReturn}
+\Hypertarget{sprite_8h_aca9a7cf77724c985eef4b68dedca116b}\label{sprite_8h_aca9a7cf77724c985eef4b68dedca116b} 
+\index{sprite.h@{sprite.h}!getPlayer@{getPlayer}}
+\index{getPlayer@{getPlayer}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{getPlayer()}{getPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} get\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the \doxylink{struct_player}{Player} \doxylink{struct_sprite}{Sprite} object. 
+
+\begin{DoxyReturn}{Returns}
+the player \doxylink{struct_sprite}{Sprite} ~\newline
+ 
+\end{DoxyReturn}

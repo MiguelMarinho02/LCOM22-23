@@ -1,0 +1,44 @@
+\doxysection{sprite.\+h}
+\hypertarget{sprite_8h_source}{}\label{sprite_8h_source}\index{src/lib/sprite.h@{src/lib/sprite.h}}
+\mbox{\hyperlink{sprite_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <lcom/lcf.h>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{gpu_8h}{gpu.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}../imgs/test.xpm"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}../imgs/ship32.xpm"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}../imgs/enemy32\_1a.xpm"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}../imgs/enemy32\_1b.xpm"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}../imgs/enemy32\_1c.xpm"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}../imgs/enemy32\_1d.xpm"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}../imgs/bullet\_blue10.xpm"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}../imgs/bullet\_red10.xpm"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}../imgs/crossair22.xpm"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}../imgs/text\_font.xpm"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}../imgs/text\_font\_big.xpm"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00019\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_sprite_ab36028dcefdd4bf024c52c8d9519a283}{x}},\ y;\ \textcolor{comment}{//\ current\ position}}
+\DoxyCodeLine{00020\ \textcolor{keywordtype}{int}\ width,\ \mbox{\hyperlink{struct_sprite_a1f07c8f2080c193759aec0e13503d7ab}{height}};\ \textcolor{comment}{//\ dimensions}}
+\DoxyCodeLine{00021\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_sprite_a0298d7735dd14d7d057afd438eca2a3d}{old\_x\_offset}},old\_y\_offset;}
+\DoxyCodeLine{00022\ xpm\_image\_t\ \mbox{\hyperlink{struct_sprite_a615e2f50ab7ed10fc3b05de4ad8d775a}{map}};\ \textcolor{comment}{//\ the\ pixmap}}
+\DoxyCodeLine{00023\ \}\ \mbox{\hyperlink{struct_sprite}{Sprite}};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_bullet}{Bullet}}\{}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_bullet_ad7296146af74987e53b05b1e5f0321e0}{x\_dest}};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_bullet_ae0a424cc52f9cbd1b8a3f81bba38b69e}{y\_dest}};}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_bullet_a55b173a370699f4c5275ed4d67db7e8d}{move\_x}};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_bullet_ace96ab5ad959e29299c5a2363c382e94}{move\_y}};}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_bullet_a2a188beb886ba79df4ae40baddec3ae8}{error1}};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_bullet_a984ec26bced6fd0c1446a078f78d3341}{goRight}};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_bullet_a0dee6bed7c3a0ecba4861723f8e462e7}{isActive}};}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{struct_sprite}{Sprite}}\ \mbox{\hyperlink{struct_bullet_aa7e525e8638ebc004fc187253da948a0}{spr}};}
+\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{sprite_8h_abd77a47badd2445bfb4f065066de62d7}{createSprites}}();}
+\DoxyCodeLine{00037\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *\ \mbox{\hyperlink{sprite_8h_aca9a7cf77724c985eef4b68dedca116b}{getPlayer}}();}
+\DoxyCodeLine{00038\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ \mbox{\hyperlink{sprite_8h_a617bd3ed3117d64f08a1a550c89c2d87}{getAlienSprite}}(\textcolor{keywordtype}{int}\ spriteNum);}
+
+\end{DoxyCode}

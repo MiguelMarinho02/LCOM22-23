@@ -1,0 +1,90 @@
+\doxysection{src/lib/game\+\_\+loop.h File Reference}
+\hypertarget{game__loop_8h}{}\label{game__loop_8h}\index{src/lib/game\_loop.h@{src/lib/game\_loop.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \"{}gpu.\+h\"{}}\newline
+{\ttfamily \#include \"{}keyboard.\+h\"{}}\newline
+{\ttfamily \#include \"{}mouse.\+h\"{}}\newline
+{\ttfamily \#include \"{}timer.\+h\"{}}\newline
+{\ttfamily \#include \"{}controller.\+h\"{}}\newline
+Include dependency graph for game\+\_\+loop.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game__loop_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{game__loop_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{game__loop_8h_aaf29bbe309504beb4cfec2481eacee62}{game\+State}} \{ \mbox{\hyperlink{game__loop_8h_aaf29bbe309504beb4cfec2481eacee62a4c40e60bc71a32b924ce1f08d57f9721}{MENU}}
+, \mbox{\hyperlink{game__loop_8h_aaf29bbe309504beb4cfec2481eacee62ad50cf309d7568040619ed26ee6835a84}{GAME}}
+, \mbox{\hyperlink{game__loop_8h_aaf29bbe309504beb4cfec2481eacee62a8ac6a0bc60a7a5faad394dc988be36eb}{LEADERBOARD}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{game__loop_8h_a8c6784cce2694711456d15312cea2901}{start\+\_\+game}} (uint8\+\_\+t timer\+\_\+bit\+\_\+no, uint8\+\_\+t keyboard\+\_\+bit\+\_\+no, uint8\+\_\+t mouse\+\_\+bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Loops while game is running, handles interrupts and calls the respective functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{game__loop_8h_aaf29bbe309504beb4cfec2481eacee62}\label{game__loop_8h_aaf29bbe309504beb4cfec2481eacee62} 
+\index{game\_loop.h@{game\_loop.h}!gameState@{gameState}}
+\index{gameState@{gameState}!game\_loop.h@{game\_loop.h}}
+\doxysubsubsection{\texorpdfstring{gameState}{gameState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{game__loop_8h_aaf29bbe309504beb4cfec2481eacee62}{game\+State}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MENU@{MENU}!game\_loop.h@{game\_loop.h}}\index{game\_loop.h@{game\_loop.h}!MENU@{MENU}}}\Hypertarget{game__loop_8h_aaf29bbe309504beb4cfec2481eacee62a4c40e60bc71a32b924ce1f08d57f9721}\label{game__loop_8h_aaf29bbe309504beb4cfec2481eacee62a4c40e60bc71a32b924ce1f08d57f9721} 
+MENU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAME@{GAME}!game\_loop.h@{game\_loop.h}}\index{game\_loop.h@{game\_loop.h}!GAME@{GAME}}}\Hypertarget{game__loop_8h_aaf29bbe309504beb4cfec2481eacee62ad50cf309d7568040619ed26ee6835a84}\label{game__loop_8h_aaf29bbe309504beb4cfec2481eacee62ad50cf309d7568040619ed26ee6835a84} 
+GAME&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEADERBOARD@{LEADERBOARD}!game\_loop.h@{game\_loop.h}}\index{game\_loop.h@{game\_loop.h}!LEADERBOARD@{LEADERBOARD}}}\Hypertarget{game__loop_8h_aaf29bbe309504beb4cfec2481eacee62a8ac6a0bc60a7a5faad394dc988be36eb}\label{game__loop_8h_aaf29bbe309504beb4cfec2481eacee62a8ac6a0bc60a7a5faad394dc988be36eb} 
+LEADERBOARD&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{game__loop_8h_a8c6784cce2694711456d15312cea2901}\label{game__loop_8h_a8c6784cce2694711456d15312cea2901} 
+\index{game\_loop.h@{game\_loop.h}!start\_game@{start\_game}}
+\index{start\_game@{start\_game}!game\_loop.h@{game\_loop.h}}
+\doxysubsubsection{\texorpdfstring{start\_game()}{start\_game()}}
+{\footnotesize\ttfamily int start\+\_\+game (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{timer\+\_\+bit\+\_\+no,  }\item[{uint8\+\_\+t}]{keyboard\+\_\+bit\+\_\+no,  }\item[{uint8\+\_\+t}]{mouse\+\_\+bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Loops while game is running, handles interrupts and calls the respective functions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer\+\_\+bit\+\_\+no} & \\
+\hline
+{\em keyboard\+\_\+bit\+\_\+no} & \\
+\hline
+{\em mouse\+\_\+bit\+\_\+no} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{game__loop_8h_a8c6784cce2694711456d15312cea2901_cgraph}
+\end{center}
+\end{figure}

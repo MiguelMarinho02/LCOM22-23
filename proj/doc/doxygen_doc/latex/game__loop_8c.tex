@@ -1,0 +1,265 @@
+\doxysection{src/lib/game\+\_\+loop.c File Reference}
+\hypertarget{game__loop_8c}{}\label{game__loop_8c}\index{src/lib/game\_loop.c@{src/lib/game\_loop.c}}
+{\ttfamily \#include \"{}game\+\_\+loop.\+h\"{}}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for game\+\_\+loop.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game__loop_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{game__loop_8c_ab8c52c1b4c021ed3e6b6b677bd2ac019}{MODE}}~0x14C
+\item 
+\#define \mbox{\hyperlink{game__loop_8c_a8cb726577cd35fc0582744b2270e192f}{W\+\_\+\+KEY}}~0x91
+\item 
+\#define \mbox{\hyperlink{game__loop_8c_a2e092124f706e9898a26f3d0c6dd33d3}{A\+\_\+\+KEY}}~0x9E
+\item 
+\#define \mbox{\hyperlink{game__loop_8c_a38916d959d471a2781d390910271b6b5}{S\+\_\+\+KEY}}~0x9F
+\item 
+\#define \mbox{\hyperlink{game__loop_8c_a23c8dc1c6696b91ba6b96f2dca53b7ba}{D\+\_\+\+KEY}}~0x\+A0
+\item 
+\#define \mbox{\hyperlink{game__loop_8c_abdcd784aab1ab72e5b041fef85328927}{SPACE\+\_\+\+KEY}}~0x\+B9
+\item 
+\#define \mbox{\hyperlink{game__loop_8c_a470fc4bfd03524365280f7d40b0d6d5c}{PIXELS\+\_\+\+PER\+\_\+\+MOVE}}~50
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{game__loop_8c_a35b2d85671d0d3eb19f7091286b46501}{timer\+\_\+game\+\_\+state}} (int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{timer_8c_a617a47c70795bcff659815ad0efd2266}{counter}}, int sprite\+Num, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{sprite_8c_a76637643148291960b948adc755cf900}{bullet}}, int \texorpdfstring{$\ast$}{*}score, int \texorpdfstring{$\ast$}{*}timer, int \texorpdfstring{$\ast$}{*}hp)
+\begin{DoxyCompactList}\small\item\em timer game handler \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{game__loop_8c_a9e46e8941e75378f7579659e2f591be2}{timer\+\_\+menu\+\_\+state}} ()
+\begin{DoxyCompactList}\small\item\em Clears and redisplays the menu flipping the buffer. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{game__loop_8c_ab83eb04579e8d5fd8fc5053f01ae654a}{timer\+\_\+leaderboard\+\_\+state}} ()
+\begin{DoxyCompactList}\small\item\em Clears menu and displays the leaderboard flipping the buffer. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{game__loop_8c_a402d92445a31f5a484a35af61055b91e}{mouse\+\_\+game\+\_\+state}} (int \texorpdfstring{$\ast$}{*}x\+\_\+dest, int \texorpdfstring{$\ast$}{*}y\+\_\+dest, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{sprite_8c_a76637643148291960b948adc755cf900}{bullet}})
+\begin{DoxyCompactList}\small\item\em Mouse game position handler. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{game__loop_8c_ac62ab7ec5350c8dcf24dad4a7812ac91}{mouse\+\_\+menu\+\_\+state}} (bool \texorpdfstring{$\ast$}{*}finished, enum \mbox{\hyperlink{game__loop_8h_aaf29bbe309504beb4cfec2481eacee62}{game\+State}} \texorpdfstring{$\ast$}{*}state)
+\begin{DoxyCompactList}\small\item\em Mouse menu position handler. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{game__loop_8c_a3337ae42461b83aee385823d88edc3e2}{mouse\+\_\+leaderboard\+\_\+state}} (enum \mbox{\hyperlink{game__loop_8h_aaf29bbe309504beb4cfec2481eacee62}{game\+State}} \texorpdfstring{$\ast$}{*}state)
+\begin{DoxyCompactList}\small\item\em Leaderboard mouse handler. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{game__loop_8c_a8c6784cce2694711456d15312cea2901}{start\+\_\+game}} (uint8\+\_\+t timer\+\_\+bit\+\_\+no, uint8\+\_\+t keyboard\+\_\+bit\+\_\+no, uint8\+\_\+t mouse\+\_\+bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Loops while game is running, handles interrupts and calls the respective functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{game__loop_8c_a2e092124f706e9898a26f3d0c6dd33d3}\label{game__loop_8c_a2e092124f706e9898a26f3d0c6dd33d3} 
+\index{game\_loop.c@{game\_loop.c}!A\_KEY@{A\_KEY}}
+\index{A\_KEY@{A\_KEY}!game\_loop.c@{game\_loop.c}}
+\doxysubsubsection{\texorpdfstring{A\_KEY}{A\_KEY}}
+{\footnotesize\ttfamily \#define A\+\_\+\+KEY~0x9E}
+
+\Hypertarget{game__loop_8c_a23c8dc1c6696b91ba6b96f2dca53b7ba}\label{game__loop_8c_a23c8dc1c6696b91ba6b96f2dca53b7ba} 
+\index{game\_loop.c@{game\_loop.c}!D\_KEY@{D\_KEY}}
+\index{D\_KEY@{D\_KEY}!game\_loop.c@{game\_loop.c}}
+\doxysubsubsection{\texorpdfstring{D\_KEY}{D\_KEY}}
+{\footnotesize\ttfamily \#define D\+\_\+\+KEY~0x\+A0}
+
+\Hypertarget{game__loop_8c_ab8c52c1b4c021ed3e6b6b677bd2ac019}\label{game__loop_8c_ab8c52c1b4c021ed3e6b6b677bd2ac019} 
+\index{game\_loop.c@{game\_loop.c}!MODE@{MODE}}
+\index{MODE@{MODE}!game\_loop.c@{game\_loop.c}}
+\doxysubsubsection{\texorpdfstring{MODE}{MODE}}
+{\footnotesize\ttfamily \#define MODE~0x14C}
+
+\Hypertarget{game__loop_8c_a470fc4bfd03524365280f7d40b0d6d5c}\label{game__loop_8c_a470fc4bfd03524365280f7d40b0d6d5c} 
+\index{game\_loop.c@{game\_loop.c}!PIXELS\_PER\_MOVE@{PIXELS\_PER\_MOVE}}
+\index{PIXELS\_PER\_MOVE@{PIXELS\_PER\_MOVE}!game\_loop.c@{game\_loop.c}}
+\doxysubsubsection{\texorpdfstring{PIXELS\_PER\_MOVE}{PIXELS\_PER\_MOVE}}
+{\footnotesize\ttfamily \#define PIXELS\+\_\+\+PER\+\_\+\+MOVE~50}
+
+\Hypertarget{game__loop_8c_a38916d959d471a2781d390910271b6b5}\label{game__loop_8c_a38916d959d471a2781d390910271b6b5} 
+\index{game\_loop.c@{game\_loop.c}!S\_KEY@{S\_KEY}}
+\index{S\_KEY@{S\_KEY}!game\_loop.c@{game\_loop.c}}
+\doxysubsubsection{\texorpdfstring{S\_KEY}{S\_KEY}}
+{\footnotesize\ttfamily \#define S\+\_\+\+KEY~0x9F}
+
+\Hypertarget{game__loop_8c_abdcd784aab1ab72e5b041fef85328927}\label{game__loop_8c_abdcd784aab1ab72e5b041fef85328927} 
+\index{game\_loop.c@{game\_loop.c}!SPACE\_KEY@{SPACE\_KEY}}
+\index{SPACE\_KEY@{SPACE\_KEY}!game\_loop.c@{game\_loop.c}}
+\doxysubsubsection{\texorpdfstring{SPACE\_KEY}{SPACE\_KEY}}
+{\footnotesize\ttfamily \#define SPACE\+\_\+\+KEY~0x\+B9}
+
+\Hypertarget{game__loop_8c_a8cb726577cd35fc0582744b2270e192f}\label{game__loop_8c_a8cb726577cd35fc0582744b2270e192f} 
+\index{game\_loop.c@{game\_loop.c}!W\_KEY@{W\_KEY}}
+\index{W\_KEY@{W\_KEY}!game\_loop.c@{game\_loop.c}}
+\doxysubsubsection{\texorpdfstring{W\_KEY}{W\_KEY}}
+{\footnotesize\ttfamily \#define W\+\_\+\+KEY~0x91}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{game__loop_8c_a402d92445a31f5a484a35af61055b91e}\label{game__loop_8c_a402d92445a31f5a484a35af61055b91e} 
+\index{game\_loop.c@{game\_loop.c}!mouse\_game\_state@{mouse\_game\_state}}
+\index{mouse\_game\_state@{mouse\_game\_state}!game\_loop.c@{game\_loop.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_game\_state()}{mouse\_game\_state()}}
+{\footnotesize\ttfamily int mouse\+\_\+game\+\_\+state (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{x\+\_\+dest,  }\item[{int \texorpdfstring{$\ast$}{*}}]{y\+\_\+dest,  }\item[{int \texorpdfstring{$\ast$}{*}}]{bullet }\end{DoxyParamCaption})}
+
+
+
+Mouse game position handler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+dest} & \\
+\hline
+{\em y\+\_\+dest} & \\
+\hline
+{\em bullet} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{game__loop_8c_a3337ae42461b83aee385823d88edc3e2}\label{game__loop_8c_a3337ae42461b83aee385823d88edc3e2} 
+\index{game\_loop.c@{game\_loop.c}!mouse\_leaderboard\_state@{mouse\_leaderboard\_state}}
+\index{mouse\_leaderboard\_state@{mouse\_leaderboard\_state}!game\_loop.c@{game\_loop.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_leaderboard\_state()}{mouse\_leaderboard\_state()}}
+{\footnotesize\ttfamily int mouse\+\_\+leaderboard\+\_\+state (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{game__loop_8h_aaf29bbe309504beb4cfec2481eacee62}{game\+State}} \texorpdfstring{$\ast$}{*}}]{state }\end{DoxyParamCaption})}
+
+
+
+Leaderboard mouse handler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{game__loop_8c_ac62ab7ec5350c8dcf24dad4a7812ac91}\label{game__loop_8c_ac62ab7ec5350c8dcf24dad4a7812ac91} 
+\index{game\_loop.c@{game\_loop.c}!mouse\_menu\_state@{mouse\_menu\_state}}
+\index{mouse\_menu\_state@{mouse\_menu\_state}!game\_loop.c@{game\_loop.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_menu\_state()}{mouse\_menu\_state()}}
+{\footnotesize\ttfamily int mouse\+\_\+menu\+\_\+state (\begin{DoxyParamCaption}\item[{bool \texorpdfstring{$\ast$}{*}}]{finished,  }\item[{enum \mbox{\hyperlink{game__loop_8h_aaf29bbe309504beb4cfec2481eacee62}{game\+State}} \texorpdfstring{$\ast$}{*}}]{state }\end{DoxyParamCaption})}
+
+
+
+Mouse menu position handler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em finished} & \\
+\hline
+{\em state} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{game__loop_8c_a8c6784cce2694711456d15312cea2901}\label{game__loop_8c_a8c6784cce2694711456d15312cea2901} 
+\index{game\_loop.c@{game\_loop.c}!start\_game@{start\_game}}
+\index{start\_game@{start\_game}!game\_loop.c@{game\_loop.c}}
+\doxysubsubsection{\texorpdfstring{start\_game()}{start\_game()}}
+{\footnotesize\ttfamily int start\+\_\+game (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{timer\+\_\+bit\+\_\+no,  }\item[{uint8\+\_\+t}]{keyboard\+\_\+bit\+\_\+no,  }\item[{uint8\+\_\+t}]{mouse\+\_\+bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Loops while game is running, handles interrupts and calls the respective functions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer\+\_\+bit\+\_\+no} & \\
+\hline
+{\em keyboard\+\_\+bit\+\_\+no} & \\
+\hline
+{\em mouse\+\_\+bit\+\_\+no} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{game__loop_8c_a8c6784cce2694711456d15312cea2901_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{game__loop_8c_a35b2d85671d0d3eb19f7091286b46501}\label{game__loop_8c_a35b2d85671d0d3eb19f7091286b46501} 
+\index{game\_loop.c@{game\_loop.c}!timer\_game\_state@{timer\_game\_state}}
+\index{timer\_game\_state@{timer\_game\_state}!game\_loop.c@{game\_loop.c}}
+\doxysubsubsection{\texorpdfstring{timer\_game\_state()}{timer\_game\_state()}}
+{\footnotesize\ttfamily int timer\+\_\+game\+\_\+state (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{counter,  }\item[{int}]{sprite\+Num,  }\item[{int \texorpdfstring{$\ast$}{*}}]{bullet,  }\item[{int \texorpdfstring{$\ast$}{*}}]{score,  }\item[{int \texorpdfstring{$\ast$}{*}}]{timer,  }\item[{int \texorpdfstring{$\ast$}{*}}]{hp }\end{DoxyParamCaption})}
+
+
+
+timer game handler 
+
+
+\begin{DoxyParams}{Parameters}
+{\em counter} & \\
+\hline
+{\em sprite\+Num} & \\
+\hline
+{\em bullet} & \\
+\hline
+{\em score} & \\
+\hline
+{\em timer} & \\
+\hline
+{\em hp} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game__loop_8c_a35b2d85671d0d3eb19f7091286b46501_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{game__loop_8c_a35b2d85671d0d3eb19f7091286b46501_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{game__loop_8c_ab83eb04579e8d5fd8fc5053f01ae654a}\label{game__loop_8c_ab83eb04579e8d5fd8fc5053f01ae654a} 
+\index{game\_loop.c@{game\_loop.c}!timer\_leaderboard\_state@{timer\_leaderboard\_state}}
+\index{timer\_leaderboard\_state@{timer\_leaderboard\_state}!game\_loop.c@{game\_loop.c}}
+\doxysubsubsection{\texorpdfstring{timer\_leaderboard\_state()}{timer\_leaderboard\_state()}}
+{\footnotesize\ttfamily int timer\+\_\+leaderboard\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears menu and displays the leaderboard flipping the buffer. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{game__loop_8c_a9e46e8941e75378f7579659e2f591be2}\label{game__loop_8c_a9e46e8941e75378f7579659e2f591be2} 
+\index{game\_loop.c@{game\_loop.c}!timer\_menu\_state@{timer\_menu\_state}}
+\index{timer\_menu\_state@{timer\_menu\_state}!game\_loop.c@{game\_loop.c}}
+\doxysubsubsection{\texorpdfstring{timer\_menu\_state()}{timer\_menu\_state()}}
+{\footnotesize\ttfamily int timer\+\_\+menu\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears and redisplays the menu flipping the buffer. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{game__loop_8c_a9e46e8941e75378f7579659e2f591be2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{game__loop_8c_a9e46e8941e75378f7579659e2f591be2_icgraph}
+\end{center}
+\end{figure}

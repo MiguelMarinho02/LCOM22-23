@@ -1,0 +1,5 @@
+<map id="timer_game_state" name="timer_game_state">
+<area shape="rect" id="Node000001" title="timer game handler" alt="" coords="140,5,267,31"/>
+<area shape="rect" id="Node000002" href="$game__loop_8c.html#a8c6784cce2694711456d15312cea2901" title="Loops while game is running, handles interrupts and calls the respective functions." alt="" coords="5,5,92,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,21,92,21,92,15,125,15"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="timer_menu_state" name="timer_menu_state">
+<area shape="rect" id="Node000001" title="Clears and redisplays the menu flipping the buffer." alt="" coords="5,80,132,105"/>
+<area shape="rect" id="Node000002" href="$draw__elements_8c.html#a5f5131a2e10a6b3d67b5077ac966ebf9" title="Clears the menu of the game." alt="" coords="196,5,285,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,77,179,40,191,34,193,39,181,44,99,82"/>
+<area shape="rect" id="Node000003" href="$draw__elements_8c.html#a7d771989b41395d6d703f523c6fc22eb" title="Draws the menu of the game." alt="" coords="197,55,285,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="132,81,181,73,181,79,133,86"/>
+<area shape="rect" id="Node000004" href="$gpu_8c.html#ac1bdb77965fded6f767a041df5a9e47f" title=" " alt="" coords="203,104,279,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="133,99,187,107,187,112,132,104"/>
+<area shape="rect" id="Node000005" href="$timer_8c.html#a91a2072306c68353712a6b771287dc2c" title=" " alt="" coords="180,153,301,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="101,104,181,138,196,145,194,149,179,143,99,108"/>
+</map>

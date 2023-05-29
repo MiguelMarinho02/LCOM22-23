@@ -1,0 +1,157 @@
+\doxysection{src/lib/rtc.h File Reference}
+\hypertarget{rtc_8h}{}\label{rtc_8h}\index{src/lib/rtc.h@{src/lib/rtc.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for rtc.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{rtc_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_date}{Date}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a710b98232df2c563009e6f8a6cd18220}{RTC\+\_\+\+ADDR\+\_\+\+REG}}~0x70
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a2f258a00c59c3f347c8d2d4a75471ce0}{RTC\+\_\+\+DATA\+\_\+\+REG}}~0x71
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a34721de82324720eb8a83686ba036605}{DAY\+\_\+\+MONTH\+\_\+\+REG}}~0x07
+\item 
+\#define \mbox{\hyperlink{rtc_8h_af97fbfe83998eef17fb98285c7b366e3}{MONTH\+\_\+\+REG}}~0x08
+\item 
+\#define \mbox{\hyperlink{rtc_8h_af54119cc0b644ea37bd26ac9206264a8}{YEAR\+\_\+\+REG}}~0x09
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a9935cde70013bbc215f658cfc078b988}{REGISTER\+\_\+B}}~0x0B
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a5bca0b9b7966f6562b2e0d31f0406604}{REGISTER\+\_\+A}}~0x0A
+\item 
+\#define \mbox{\hyperlink{rtc_8h_afe5d31647d8882e7fa9ea7030baa2780}{RTC\+\_\+\+DM}}~BIT(2)
+\item 
+\#define \mbox{\hyperlink{rtc_8h_a2ebe3d816d8b2e9f1be075554e4135b3}{RTC\+\_\+\+UIP}}~BIT(7)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{rtc_8h_a76e41b6e90fe6d317ceaa5d463af85a6}{prepare\+Reading\+Writing}} (uint8\+\_\+t reg)
+\begin{DoxyCompactList}\small\item\em Prepares the RTC to read or write to the RTC register. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{rtc_8h_af18fba5e1deb96518d01be9fc87396a4}{read\+Data}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}num)
+\begin{DoxyCompactList}\small\item\em Reads the data from the RTC register. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{rtc_8h_aa697d594731f7c63709bbb6febf0a20d}{write\+Data\+RTC}} (uint8\+\_\+t \mbox{\hyperlink{keyboard_8c_a325819a8e492ac69542e8b31705af6e9}{data}})
+\begin{DoxyCompactList}\small\item\em Writes data to the RTC register. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_date}{Date}} \mbox{\hyperlink{rtc_8h_ad87123eedbd7fb69e228f7ea59180b43}{fecth\+Current\+Date}} ()
+\begin{DoxyCompactList}\small\item\em Entire process necessary to read and write the current date to the RTC register and adapt it to a date structure that can be easily used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{rtc_8h_a34721de82324720eb8a83686ba036605}\label{rtc_8h_a34721de82324720eb8a83686ba036605} 
+\index{rtc.h@{rtc.h}!DAY\_MONTH\_REG@{DAY\_MONTH\_REG}}
+\index{DAY\_MONTH\_REG@{DAY\_MONTH\_REG}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{DAY\_MONTH\_REG}{DAY\_MONTH\_REG}}
+{\footnotesize\ttfamily \#define DAY\+\_\+\+MONTH\+\_\+\+REG~0x07}
+
+\Hypertarget{rtc_8h_af97fbfe83998eef17fb98285c7b366e3}\label{rtc_8h_af97fbfe83998eef17fb98285c7b366e3} 
+\index{rtc.h@{rtc.h}!MONTH\_REG@{MONTH\_REG}}
+\index{MONTH\_REG@{MONTH\_REG}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{MONTH\_REG}{MONTH\_REG}}
+{\footnotesize\ttfamily \#define MONTH\+\_\+\+REG~0x08}
+
+\Hypertarget{rtc_8h_a5bca0b9b7966f6562b2e0d31f0406604}\label{rtc_8h_a5bca0b9b7966f6562b2e0d31f0406604} 
+\index{rtc.h@{rtc.h}!REGISTER\_A@{REGISTER\_A}}
+\index{REGISTER\_A@{REGISTER\_A}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{REGISTER\_A}{REGISTER\_A}}
+{\footnotesize\ttfamily \#define REGISTER\+\_\+A~0x0A}
+
+\Hypertarget{rtc_8h_a9935cde70013bbc215f658cfc078b988}\label{rtc_8h_a9935cde70013bbc215f658cfc078b988} 
+\index{rtc.h@{rtc.h}!REGISTER\_B@{REGISTER\_B}}
+\index{REGISTER\_B@{REGISTER\_B}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{REGISTER\_B}{REGISTER\_B}}
+{\footnotesize\ttfamily \#define REGISTER\+\_\+B~0x0B}
+
+\Hypertarget{rtc_8h_a710b98232df2c563009e6f8a6cd18220}\label{rtc_8h_a710b98232df2c563009e6f8a6cd18220} 
+\index{rtc.h@{rtc.h}!RTC\_ADDR\_REG@{RTC\_ADDR\_REG}}
+\index{RTC\_ADDR\_REG@{RTC\_ADDR\_REG}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_ADDR\_REG}{RTC\_ADDR\_REG}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+ADDR\+\_\+\+REG~0x70}
+
+\Hypertarget{rtc_8h_a2f258a00c59c3f347c8d2d4a75471ce0}\label{rtc_8h_a2f258a00c59c3f347c8d2d4a75471ce0} 
+\index{rtc.h@{rtc.h}!RTC\_DATA\_REG@{RTC\_DATA\_REG}}
+\index{RTC\_DATA\_REG@{RTC\_DATA\_REG}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_DATA\_REG}{RTC\_DATA\_REG}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+DATA\+\_\+\+REG~0x71}
+
+\Hypertarget{rtc_8h_afe5d31647d8882e7fa9ea7030baa2780}\label{rtc_8h_afe5d31647d8882e7fa9ea7030baa2780} 
+\index{rtc.h@{rtc.h}!RTC\_DM@{RTC\_DM}}
+\index{RTC\_DM@{RTC\_DM}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_DM}{RTC\_DM}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+DM~BIT(2)}
+
+\Hypertarget{rtc_8h_a2ebe3d816d8b2e9f1be075554e4135b3}\label{rtc_8h_a2ebe3d816d8b2e9f1be075554e4135b3} 
+\index{rtc.h@{rtc.h}!RTC\_UIP@{RTC\_UIP}}
+\index{RTC\_UIP@{RTC\_UIP}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_UIP}{RTC\_UIP}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+UIP~BIT(7)}
+
+\Hypertarget{rtc_8h_af54119cc0b644ea37bd26ac9206264a8}\label{rtc_8h_af54119cc0b644ea37bd26ac9206264a8} 
+\index{rtc.h@{rtc.h}!YEAR\_REG@{YEAR\_REG}}
+\index{YEAR\_REG@{YEAR\_REG}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{YEAR\_REG}{YEAR\_REG}}
+{\footnotesize\ttfamily \#define YEAR\+\_\+\+REG~0x09}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{rtc_8h_ad87123eedbd7fb69e228f7ea59180b43}\label{rtc_8h_ad87123eedbd7fb69e228f7ea59180b43} 
+\index{rtc.h@{rtc.h}!fecthCurrentDate@{fecthCurrentDate}}
+\index{fecthCurrentDate@{fecthCurrentDate}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{fecthCurrentDate()}{fecthCurrentDate()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_date}{Date}} fecth\+Current\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Entire process necessary to read and write the current date to the RTC register and adapt it to a date structure that can be easily used. 
+
+\begin{DoxyReturn}{Returns}
+struct \doxylink{struct_date}{Date} 
+\end{DoxyReturn}
+\Hypertarget{rtc_8h_a76e41b6e90fe6d317ceaa5d463af85a6}\label{rtc_8h_a76e41b6e90fe6d317ceaa5d463af85a6} 
+\index{rtc.h@{rtc.h}!prepareReadingWriting@{prepareReadingWriting}}
+\index{prepareReadingWriting@{prepareReadingWriting}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{prepareReadingWriting()}{prepareReadingWriting()}}
+{\footnotesize\ttfamily int() prepare\+Reading\+Writing (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{reg }\end{DoxyParamCaption})}
+
+
+
+Prepares the RTC to read or write to the RTC register. 
+
+\Hypertarget{rtc_8h_af18fba5e1deb96518d01be9fc87396a4}\label{rtc_8h_af18fba5e1deb96518d01be9fc87396a4} 
+\index{rtc.h@{rtc.h}!readData@{readData}}
+\index{readData@{readData}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{readData()}{readData()}}
+{\footnotesize\ttfamily int() read\+Data (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{num }\end{DoxyParamCaption})}
+
+
+
+Reads the data from the RTC register. 
+
+\Hypertarget{rtc_8h_aa697d594731f7c63709bbb6febf0a20d}\label{rtc_8h_aa697d594731f7c63709bbb6febf0a20d} 
+\index{rtc.h@{rtc.h}!writeDataRTC@{writeDataRTC}}
+\index{writeDataRTC@{writeDataRTC}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{writeDataRTC()}{writeDataRTC()}}
+{\footnotesize\ttfamily int() write\+Data\+RTC (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+
+
+Writes data to the RTC register. 
+

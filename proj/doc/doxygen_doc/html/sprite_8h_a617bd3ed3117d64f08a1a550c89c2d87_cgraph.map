@@ -1,0 +1,5 @@
+<map id="getAlienSprite" name="getAlienSprite">
+<area shape="rect" id="Node000001" title="Get the Alien Sprite object." alt="" coords="5,5,108,31"/>
+<area shape="rect" id="Node000002" href="$gpu_8c.html#a1be914380d16c4861634dbbb46a330eb" title=" " alt="" coords="156,5,315,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,15,141,15,141,21,108,21"/>
+</map>

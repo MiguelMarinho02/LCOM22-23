@@ -1,0 +1,103 @@
+\doxysection{src/lib/mouse.h File Reference}
+\hypertarget{mouse_8h}{}\label{mouse_8h}\index{src/lib/mouse.h@{src/lib/mouse.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for mouse.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{mouse_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{mouse_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{mouse_8h_a0fd0b43bbef9298c985c4b69bd2c0c0f}{mouse\+\_\+subscribe\+\_\+it}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}bit\+\_\+no)
+\item 
+int \mbox{\hyperlink{mouse_8h_aa7231d2868387dec00d4aaf9b2f10250}{mouse\+\_\+unsubscribe\+\_\+it}} ()
+\item 
+void \mbox{\hyperlink{mouse_8h_a822e69b3f4936505d6832a4ff3d4375f}{logic\+\_\+for\+\_\+packets}} ()
+\item 
+int \mbox{\hyperlink{mouse_8h_a17bcf4b2536cf13c7f3937c7d0aa7bc1}{mouse\+\_\+disable\+\_\+data\+\_\+reporting}} ()
+\item 
+int \mbox{\hyperlink{mouse_8h_a1e852cadfb0a411764799306410099d8}{mouse\+\_\+enable\+\_\+data\+\_\+reporting\+\_\+man\+Made}} ()
+\item 
+int() \mbox{\hyperlink{mouse_8h_a8ec1bb94d050ea7e27e03d545752a1bc}{mouse\+\_\+write\+\_\+to\+\_\+\+KBC}} (int port, uint8\+\_\+t cmd)
+\item 
+void() \mbox{\hyperlink{mouse_8h_ac0f33f62368976d9f3c8490caa106d99}{set\+\_\+count}} (uint32\+\_\+t j)
+\item 
+uint32\+\_\+t() \mbox{\hyperlink{mouse_8h_a445f5a3f03ba404c3b63dfe58cba0b03}{get\+\_\+count}} ()
+\item 
+int \mbox{\hyperlink{mouse_8h_ab95bcaee0976385d073f99b026072266}{disable\+INT}} ()
+\item 
+int \mbox{\hyperlink{mouse_8h_aca1142b0dd8225a747a42838da640493}{enable\+INT}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{mouse_8h_ab95bcaee0976385d073f99b026072266}\label{mouse_8h_ab95bcaee0976385d073f99b026072266} 
+\index{mouse.h@{mouse.h}!disableINT@{disableINT}}
+\index{disableINT@{disableINT}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{disableINT()}{disableINT()}}
+{\footnotesize\ttfamily int disable\+INT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{mouse_8h_aca1142b0dd8225a747a42838da640493}\label{mouse_8h_aca1142b0dd8225a747a42838da640493} 
+\index{mouse.h@{mouse.h}!enableINT@{enableINT}}
+\index{enableINT@{enableINT}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{enableINT()}{enableINT()}}
+{\footnotesize\ttfamily int enable\+INT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{mouse_8h_a445f5a3f03ba404c3b63dfe58cba0b03}\label{mouse_8h_a445f5a3f03ba404c3b63dfe58cba0b03} 
+\index{mouse.h@{mouse.h}!get\_count@{get\_count}}
+\index{get\_count@{get\_count}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{get\_count()}{get\_count()}}
+{\footnotesize\ttfamily uint32\+\_\+t() get\+\_\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{mouse_8h_a822e69b3f4936505d6832a4ff3d4375f}\label{mouse_8h_a822e69b3f4936505d6832a4ff3d4375f} 
+\index{mouse.h@{mouse.h}!logic\_for\_packets@{logic\_for\_packets}}
+\index{logic\_for\_packets@{logic\_for\_packets}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{logic\_for\_packets()}{logic\_for\_packets()}}
+{\footnotesize\ttfamily void logic\+\_\+for\+\_\+packets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{mouse_8h_a17bcf4b2536cf13c7f3937c7d0aa7bc1}\label{mouse_8h_a17bcf4b2536cf13c7f3937c7d0aa7bc1} 
+\index{mouse.h@{mouse.h}!mouse\_disable\_data\_reporting@{mouse\_disable\_data\_reporting}}
+\index{mouse\_disable\_data\_reporting@{mouse\_disable\_data\_reporting}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_disable\_data\_reporting()}{mouse\_disable\_data\_reporting()}}
+{\footnotesize\ttfamily int mouse\+\_\+disable\+\_\+data\+\_\+reporting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{mouse_8h_a1e852cadfb0a411764799306410099d8}\label{mouse_8h_a1e852cadfb0a411764799306410099d8} 
+\index{mouse.h@{mouse.h}!mouse\_enable\_data\_reporting\_manMade@{mouse\_enable\_data\_reporting\_manMade}}
+\index{mouse\_enable\_data\_reporting\_manMade@{mouse\_enable\_data\_reporting\_manMade}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_enable\_data\_reporting\_manMade()}{mouse\_enable\_data\_reporting\_manMade()}}
+{\footnotesize\ttfamily int mouse\+\_\+enable\+\_\+data\+\_\+reporting\+\_\+man\+Made (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{mouse_8h_a0fd0b43bbef9298c985c4b69bd2c0c0f}\label{mouse_8h_a0fd0b43bbef9298c985c4b69bd2c0c0f} 
+\index{mouse.h@{mouse.h}!mouse\_subscribe\_it@{mouse\_subscribe\_it}}
+\index{mouse\_subscribe\_it@{mouse\_subscribe\_it}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_subscribe\_it()}{mouse\_subscribe\_it()}}
+{\footnotesize\ttfamily int mouse\+\_\+subscribe\+\_\+it (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+\Hypertarget{mouse_8h_aa7231d2868387dec00d4aaf9b2f10250}\label{mouse_8h_aa7231d2868387dec00d4aaf9b2f10250} 
+\index{mouse.h@{mouse.h}!mouse\_unsubscribe\_it@{mouse\_unsubscribe\_it}}
+\index{mouse\_unsubscribe\_it@{mouse\_unsubscribe\_it}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_unsubscribe\_it()}{mouse\_unsubscribe\_it()}}
+{\footnotesize\ttfamily int mouse\+\_\+unsubscribe\+\_\+it (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{mouse_8h_a8ec1bb94d050ea7e27e03d545752a1bc}\label{mouse_8h_a8ec1bb94d050ea7e27e03d545752a1bc} 
+\index{mouse.h@{mouse.h}!mouse\_write\_to\_KBC@{mouse\_write\_to\_KBC}}
+\index{mouse\_write\_to\_KBC@{mouse\_write\_to\_KBC}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_write\_to\_KBC()}{mouse\_write\_to\_KBC()}}
+{\footnotesize\ttfamily int() mouse\+\_\+write\+\_\+to\+\_\+\+KBC (\begin{DoxyParamCaption}\item[{int}]{port,  }\item[{uint8\+\_\+t}]{cmd }\end{DoxyParamCaption})}
+
+\Hypertarget{mouse_8h_ac0f33f62368976d9f3c8490caa106d99}\label{mouse_8h_ac0f33f62368976d9f3c8490caa106d99} 
+\index{mouse.h@{mouse.h}!set\_count@{set\_count}}
+\index{set\_count@{set\_count}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{set\_count()}{set\_count()}}
+{\footnotesize\ttfamily void() set\+\_\+count (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{j }\end{DoxyParamCaption})}
+

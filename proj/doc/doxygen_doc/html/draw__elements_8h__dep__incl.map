@@ -1,0 +1,15 @@
+<map id="src/lib/draw_elements.h" name="src/lib/draw_elements.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="226,5,385,31"/>
+<area shape="rect" id="Node000002" href="$controller_8h.html" title=" " alt="" coords="160,79,285,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="281,43,238,80,235,76,278,39"/>
+<area shape="rect" id="Node000007" href="$draw__elements_8c.html" title=" " alt="" coords="310,79,469,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="333,39,377,76,374,80,329,43"/>
+<area shape="rect" id="Node000003" href="$controller_8c.html" title=" " alt="" coords="5,152,131,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="184,113,95,154,93,149,182,109"/>
+<area shape="rect" id="Node000004" href="$game__loop_8h.html" title=" " alt="" coords="155,152,290,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="225,120,225,151,220,151,220,120"/>
+<area shape="rect" id="Node000006" href="$mouse_8c.html" title=" " alt="" coords="314,152,425,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="262,109,346,149,344,154,260,114"/>
+<area shape="rect" id="Node000005" href="$game__loop_8c.html" title=" " alt="" coords="155,225,290,251"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="225,193,225,225,220,225,220,193"/>
+</map>

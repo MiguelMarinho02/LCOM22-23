@@ -1,0 +1,33 @@
+\doxysection{i8042.\+h}
+\hypertarget{i8042_8h_source}{}\label{i8042_8h_source}\index{src/lib/i8042.h@{src/lib/i8042.h}}
+\mbox{\hyperlink{i8042_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_LCOM\_I8042\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_LCOM\_I8042\_H\_}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <lcom/lcf.h>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ IRQ\_KEYBOARD\ \ \ \ 1}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ BREAK\_ESC\ \ \ \ \ \ \ 0x81}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ MAKE\_CODE\ \ \ \ \ \ \ BIT(7)}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ TWO\_BYTES\ \ \ \ \ \ \ 0xE0}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ ENABLE\_INT\ \ \ \ \ \ BIT(0)}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ TIMEOUT\_ERROR\ \ \ BIT(6)}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ PARITY\_ERROR\ \ \ \ BIT(7)}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ FULL\_OUT\_BUFFER\ BIT(0)}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ FULL\_IN\_BUFFER\ \ BIT(1)}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ KBC\_STATUS\_REG\ \ 0x64}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ KBC\_IN\_CMD\ \ \ \ \ \ 0x64}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ KBC\_OUT\_CMD\ \ \ \ \ 0x60}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ KBC\_READ\_CMD\ \ \ \ 0x20}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ KBC\_WRITE\_CMD\ \ \ 0x60}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ WAIT\_KBC\ \ \ \ \ \ \ \ 20000}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ MAX\_ATTEMPS\ \ \ \ \ 10}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ \_LCOM\_I8042\_H\_\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00027\ }
+
+\end{DoxyCode}

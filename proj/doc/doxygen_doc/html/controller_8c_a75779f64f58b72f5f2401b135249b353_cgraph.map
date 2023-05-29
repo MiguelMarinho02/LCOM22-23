@@ -1,0 +1,7 @@
+<map id="enemyBlastsControl" name="enemyBlastsControl">
+<area shape="rect" id="Node000001" title="Generates a random number between 0 and 49 and checks if the alien in that position is active,..." alt="" coords="5,31,144,56"/>
+<area shape="rect" id="Node000002" href="$draw__elements_8c.html#a19ae330d4e3aeab1df508a45f590a1f9" title="Create a Bullet Enemy object." alt="" coords="192,5,324,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,31,176,27,177,32,145,36"/>
+<area shape="rect" id="Node000003" href="$sprite_8c.html#aca9a7cf77724c985eef4b68dedca116b" title="Get the Player Sprite object." alt="" coords="219,55,297,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="145,50,205,58,204,63,144,55"/>
+</map>
